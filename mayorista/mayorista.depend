@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\matis\desktop\zerafin\facultad\labo ii\codeblocks\clases\mayorista\main.cpp
+	<iostream>
+
+1683511516 source:c:\users\matis\desktop\zerafin\facultad\labo ii\codeblocks\clases\mayorista\src\producto.cpp
+	<iostream>
+	"Producto.h"
+
+1683512487 c:\users\matis\desktop\zerafin\facultad\labo ii\codeblocks\clases\mayorista\include\producto.h
+
+1683512295 source:c:\users\matis\desktop\zerafin\facultad\labo ii\codeblocks\clases\mayorista\src\proveedores.cpp
+	<iostream>
+	"Proveedores.h"
+
+1683512487 c:\users\matis\desktop\zerafin\facultad\labo ii\codeblocks\clases\mayorista\include\proveedores.h
+
+1683512540 source:c:\users\matis\desktop\zerafin\facultad\labo ii\codeblocks\clases\mayorista\src\empleado.cpp
+	<iostream>
+	"Empleado.h"
+
+1683512718 c:\users\matis\desktop\zerafin\facultad\labo ii\codeblocks\clases\mayorista\include\empleado.h
+
