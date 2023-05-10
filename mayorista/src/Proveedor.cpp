@@ -1,8 +1,8 @@
 #include<iostream>
-#include "Proveedores.h"
+#include "Proveedor.h"
 using namespace std;
 
-Proveedores::Proveedores()
+Proveedor::Proveedor()
 {
     //ctor
 }
