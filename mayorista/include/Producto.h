@@ -13,6 +13,7 @@ class Producto
     /// A la hora de hacer herencia, se buscaria distribuir en grupos, ejemplo: Bebida, Comida, Mueble, etc. Aunque habria que definir que tipo de mayorista somos
     private:
         int _cantidad, _minimo, _maximo;
+        float precio;
 };
 
 #endif // PRODUCTO_H
