@@ -5,15 +5,14 @@
 class Proveedor
 {
     public:
-        Proveedor();
-        void cargarProducto();
 
-    protected:
+        void mostrar(int tipoDeProducto);
+
 
     private:
-        char _nombre[20];
-        float _precioEntrega, _precioPorBulto, _precioPorUnidad;
-        Producto producto;
+        float _descuentoBulto = 0.85;
+        bool _comproBulto = false;
+        int _precioEntrega = 1000, _bulto = 10;
 
 };
 

@@ -1,22 +1,27 @@
 #ifndef PRODUCTO_H
 #define PRODUCTO_H
 
-
 class Producto
 {
     public:
-        Producto();
-        void comprar(int id , int cantidad, bool unidadOBulto);
-        void vender(int cantidad, bool unidadOBulto, bool retiranOEnvio, bool metodoDePago);
 
-    protected:
-    /// Bebida, comida, limpieza, ropa
+    ///Setters:
+    void setNombre(char[20]);
+    void setPrecio(float);
+    void setID(int);
+    void setTipoDeProducto(int);
 
+    ///Getters:
+    char getNombre();
+    float getPrecio();
+    int getID();
+    int getTipoDeProducto();
 
     private:
-        int _cantidad, _minimo, _maximo;
+
+        char _nombre[20];
         float _precio;
-        int _id;
+        int _id, _tipoDeProducto;
 
 };
 
