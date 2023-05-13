@@ -20,22 +20,24 @@
 
 1683512718 c:\users\matis\desktop\zerafin\facultad\labo ii\codeblocks\clases\mayorista\include\empleado.h
 
-1683842743 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\main.cpp
+1684018016 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\main.cpp
 	<iostream>
 	"Hypermarket.h"
+	"Producto.h"
 
 1683512540 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\empleado.cpp
 	<iostream>
 	"Empleado.h"
 
-1683512718 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\empleado.h
+1684017691 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\empleado.h
 
-1683845867 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\producto.cpp
+1684017954 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\producto.cpp
 	<iostream>
-	"Producto.h"
 	<cstring>
+	"Producto.h"
+	"funciones.h"
 
-1683846728 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\producto.h
+1684017691 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\producto.h
 
 1683512295 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\proveedores.cpp
 	<iostream>
@@ -47,7 +49,7 @@
 	<iostream>
 	"Proveedor.h"
 
-1683846807 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\proveedor.h
+1684017691 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\proveedor.h
 	"Producto.h"
 
 1683681254 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\listadoproveedor.cpp
@@ -60,7 +62,7 @@
 	<iostream>
 	"Hypermarket.h"
 
-1683846228 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\hypermarket.h
+1684017691 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\hypermarket.h
 
 1683844209 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\comida.cpp
 	<iostream>
@@ -68,4 +70,10 @@
 
 1683844784 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\comida.h
 	"Producto.h"
+
+1684017104 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\funciones.h
+
+1684017332 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\funciones.cpp
+	<iostream>
+	<cstring>
 

@@ -1,22 +1,27 @@
 #include <iostream>
 #include "Hypermarket.h"
+#include "Producto.h"
 using namespace std;
 
 int main()
 {
-   /*
-   instancia Proveedor
-   cargamos todo lo necesario del proovedor a mano o usando la libreria random
+    Hypermarket local;
+    Producto bebida;
+    char nombreProducto[20] = "CocaCola";
 
 
-   instancia de nuestro local
-   se le pide por el constructor los productos al proveedor, en caso que no tenga lo que le pedimos, que sea
-   por un constructor default
-   */
+   //local.menu();
+   bebida.setNombre(nombreProducto);
+   bebida.setPrecio(390.99);
+   bebida.setID(14);
+   bebida.setTipoDeProducto(2);
 
-   Hypermarket local;
+   bebida.getNombre();
+   cout << bebida.getPrecio() << endl;
+   cout << bebida.getID() << endl;
+   cout << bebida.getTipoDeProducto() << endl;
 
-   local.menu();
+
 
     return 0;
 }

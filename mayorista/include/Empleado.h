@@ -5,11 +5,11 @@
 class Empleado
 {
     public:
+
         Empleado();
 
-    protected:
-
     private:
+
         float _sueldo;
         char tareas[100];
         char permisos[100];

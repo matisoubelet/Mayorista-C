@@ -12,9 +12,8 @@ class Hypermarket
         void pagos();
         void inventario();
 
-    protected:
-
     private:
+
         float _fondos, _precioEntrega, _precioPorBulto, _precioPorUnidad;
 };
 

@@ -10,6 +10,7 @@ class Proveedor
 
 
     private:
+
         float _descuentoBulto = 0.85;
         bool _comproBulto = false;
         int _precioEntrega = 1000, _bulto = 10;
