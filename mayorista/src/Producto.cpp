@@ -15,7 +15,6 @@ void Producto::mostrarCadena(char nombre[20])
             cout << nombre[i];
         }
     }
-     cout << endl;
 }
 
 void Producto::setID(int id)

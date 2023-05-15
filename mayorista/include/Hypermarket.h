@@ -11,7 +11,8 @@ class Hypermarket
         void vender();
         void pagos();
         void inventario();
-
+        ///void agregarProducto();
+        ///void borrarProducto();
     private:
 
         float _fondos, _precioEntrega, _precioPorBulto, _precioPorUnidad;

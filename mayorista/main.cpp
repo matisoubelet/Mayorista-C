@@ -1,11 +1,12 @@
 #include <iostream>
 #include "Hypermarket.h"
 #include "Producto.h"
+#include "ListadoProveedor.h"
 using namespace std;
 
 int main()
 {
-    Hypermarket local;
+    /*Hypermarket local;
     Producto bebida;
     char nombreProducto[20] = "CocaCola";
 
@@ -20,8 +21,11 @@ int main()
    cout << bebida.getPrecio() << endl;
    cout << bebida.getID() << endl;
    cout << bebida.getTipoDeProducto() << endl;
+*/
 
+    ListadoProveedor lista;
 
+    lista.listadoProductos();
 
     return 0;
 }
