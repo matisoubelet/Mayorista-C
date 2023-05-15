@@ -7,26 +7,10 @@ using namespace std;
 
 int main()
 {
-    /*Hypermarket local;
-    Producto bebida;
-    char nombreProducto[20] = "CocaCola";
 
+    Hypermarket local;
 
-   //local.menu();
-   bebida.setNombre(nombreProducto);
-   bebida.setPrecio(390.99);
-   bebida.setID(14);
-   bebida.setTipoDeProducto(2);
-
-   bebida.getNombre();
-   cout << bebida.getPrecio() << endl;
-   cout << bebida.getID() << endl;
-   cout << bebida.getTipoDeProducto() << endl;
-*/
-
-    Proveedor proveedor;
-
-    proveedor.mostrar();
+    local.comprar();            ///Todavia no compra nada, solo entra en la funcion mostrar de Proovedor
 
 
 

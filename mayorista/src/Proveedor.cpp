@@ -2,12 +2,14 @@
 #include "Proveedor.h"
 using namespace std;
 
-void Proveedor::mostrar(){
+void Proveedor::mostrar()
+{
 
     int tipoDeProducto, mostrarMas;
     ListadoProveedor listado;
 
-    do{
+    do
+    {
         cout << "==========================" << endl;
         cout << "1 - BEBIDA" << endl;
         cout << "2 - ROPA" << endl;
@@ -22,14 +24,16 @@ void Proveedor::mostrar(){
 
         cout << "Quiere ver mas productos? (Si = 1 | No = 0): ";
         cin >> mostrarMas,
-        cout << endl;
+            cout << endl;
 
-        if(mostrarMas == 1){
+        if(mostrarMas == 1)
+        {
             system("CLS");
             tipoDeProducto = 0;
         }
 
-    } while(mostrarMas == 1);
+    }
+    while(mostrarMas == 1);
 
 
 

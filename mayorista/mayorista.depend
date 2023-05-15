@@ -47,7 +47,7 @@
 
 1683512487 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\proveedores.h
 
-1684185915 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\proveedor.cpp
+1684187549 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\proveedor.cpp
 	<iostream>
 	"Proveedor.h"
 
@@ -61,9 +61,10 @@
 1684185915 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\listadoproveedor.h
 	"Producto.h"
 
-1683843478 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\hypermarket.cpp
+1684187599 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\hypermarket.cpp
 	<iostream>
 	"Hypermarket.h"
+	"Proveedor.h"
 
 1684182012 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\hypermarket.h
 

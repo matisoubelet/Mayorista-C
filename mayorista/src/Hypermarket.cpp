@@ -1,5 +1,6 @@
 #include<iostream>
 #include "Hypermarket.h"
+#include "Proveedor.h"
 using namespace std;
 
 void Hypermarket::menu()
@@ -36,7 +37,7 @@ void Hypermarket::menu()
         {
 
         case 1:
-            /// Hypermarket::comprar();
+            Hypermarket::comprar();
             break;
 
         case 2:
@@ -59,6 +60,13 @@ void Hypermarket::menu()
 
     }
     while(opcion != 0);
+
+}
+
+void Hypermarket::comprar(){
+
+    Proveedor proveedor;
+    proveedor.mostrar();
 
 }
 
