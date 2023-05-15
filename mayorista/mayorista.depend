@@ -20,11 +20,12 @@
 
 1683512718 c:\users\matis\desktop\zerafin\facultad\labo ii\codeblocks\clases\mayorista\include\empleado.h
 
-1684184722 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\main.cpp
+1684185979 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\main.cpp
 	<iostream>
 	"Hypermarket.h"
 	"Producto.h"
 	"ListadoProveedor.h"
+	"Proveedor.h"
 
 1683512540 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\empleado.cpp
 	<iostream>
@@ -46,18 +47,18 @@
 
 1683512487 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\proveedores.h
 
-1683844089 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\proveedor.cpp
+1684185915 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\proveedor.cpp
 	<iostream>
 	"Proveedor.h"
 
-1684017691 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\proveedor.h
-	"Producto.h"
+1684185915 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\proveedor.h
+	"ListadoProveedor.h"
 
-1684184841 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\listadoproveedor.cpp
+1684185915 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\listadoproveedor.cpp
 	<iostream>
 	"ListadoProveedor.h"
 
-1684181389 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\listadoproveedor.h
+1684185915 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\listadoproveedor.h
 	"Producto.h"
 
 1683843478 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\hypermarket.cpp

@@ -5,7 +5,7 @@
 class ListadoProveedor
 {
     public:
-        void listadoProductos();
+        void listadoProductos(int);
         void cargarProducto();
         /// Esta Clase debe ser capaz de entrar al archivo donde se esten guardando los productos
         /// de los proovedores a la hora de querer comprar algo de ellos. Cada producto debera incluir

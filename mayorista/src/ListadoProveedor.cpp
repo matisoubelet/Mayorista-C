@@ -52,21 +52,10 @@ void ListadoProveedor::cargarProducto()
     fclose(p);
 }
 
-void ListadoProveedor::listadoProductos(){
+void ListadoProveedor::listadoProductos(int tipoDeProducto){
 
-    int tipoDeProducto;
     Producto producto;
     FILE *p;
-
-    cout << "==========================" << endl;
-    cout << "1 - BEBIDA" << endl;
-    cout << "2 - ROPA" << endl;
-    cout << "3 - COMIDA" << endl;
-    cout << "4 - ART. LIMPIEZA" << endl;
-    cout << "==========================" << endl;
-    cout << "Que tipo de producto esta buscando?: ";
-    cin >> tipoDeProducto;
-    cout << endl << endl;
 
     p = fopen("listadoProductos.dat", "rb");
     if(p == NULL)

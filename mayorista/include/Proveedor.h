@@ -1,12 +1,12 @@
 #ifndef PROVEEDOR_H
 #define PROVEEDOR_H
-#include "Producto.h"
+#include "ListadoProveedor.h"
 
 class Proveedor
 {
     public:
 
-        void mostrar(int tipoDeProducto);
+        void mostrar();
 
 
     private:

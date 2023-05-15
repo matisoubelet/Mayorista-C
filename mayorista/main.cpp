@@ -2,6 +2,7 @@
 #include "Hypermarket.h"
 #include "Producto.h"
 #include "ListadoProveedor.h"
+#include "Proveedor.h"
 using namespace std;
 
 int main()
@@ -23,9 +24,11 @@ int main()
    cout << bebida.getTipoDeProducto() << endl;
 */
 
-    ListadoProveedor lista;
+    Proveedor proveedor;
 
-    lista.listadoProductos();
+    proveedor.mostrar();
+
+
 
     return 0;
 }
