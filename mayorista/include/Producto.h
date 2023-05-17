@@ -1,29 +1,31 @@
 #ifndef PRODUCTO_H
 #define PRODUCTO_H
 
-class Producto
-{
-    public:
+class Producto {
+private:
 
-        ///Setters:
-        void setNombre(char[20]);
-        void setPrecio(float);
-        void setID(int);
-        void setTipoDeProducto(int);
+    char _nombre[20];
+    float _precio;
+    int _id, _tipoDeProducto;
 
-        ///Getters:
-        void getNombre();
-        float getPrecio();
-        int getID();
-        int getTipoDeProducto();
+public:
 
-    private:
+    void Cargar();
+    void Mostrar();
 
-        char _nombre[20];
-        float _precio;
-        int _id, _tipoDeProducto;
+    ///Setters:
+    void setNombre(char nombre[20]);
+    void setPrecio(float);
+    void setID(int);
+    void setTipoDeProducto(int);
 
-        void mostrarCadena(char[20]);
+    ///Getters:
+    const char* getNombre();
+    float getPrecio();
+    int getID();
+    int getTipoDeProducto();
+
+
 
 
 };

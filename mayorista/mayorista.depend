@@ -81,3 +81,47 @@
 	<iostream>
 	<cstring>
 
+1684278462 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\main.cpp
+	<iostream>
+	"Hypermarket.h"
+	"Producto.h"
+	"ListadoProveedor.h"
+	"Proveedor.h"
+
+1684278462 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\hypermarket.h
+
+1684282887 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\producto.h
+
+1684278462 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\listadoproveedor.h
+	"Producto.h"
+
+1684280235 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\proveedor.h
+	"ListadoProveedor.h"
+
+1683846934 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\empleado.cpp
+	<iostream>
+	"Empleado.h"
+
+1684278462 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\empleado.h
+
+1684278462 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\hypermarket.cpp
+	<iostream>
+	"Hypermarket.h"
+	"Proveedor.h"
+
+1684283433 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\listadoproveedor.cpp
+	<iostream>
+	"ListadoProveedor.h"
+
+1684283179 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\producto.cpp
+	<iostream>
+	<cstring>
+	"Producto.h"
+	"funciones.h"
+
+1684278462 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\funciones.h
+
+1684280235 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\proveedor.cpp
+	<iostream>
+	"Proveedor.h"
+
