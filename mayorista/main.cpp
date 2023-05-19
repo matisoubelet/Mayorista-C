@@ -3,14 +3,19 @@
 #include "Producto.h"
 #include "ListadoProveedor.h"
 #include "Proveedor.h"
+#include "ListadoHypermarket.h"
 using namespace std;
 
 int main()
 {
 
-    Hypermarket local;
+    //Hypermarket local;
 
-    local.comprar();            ///Todavia no compra nada, solo entra en la funcion mostrar de Proovedor
+    //local.menu();
+
+    ListadoHypermarket listado;
+
+    listado.cargarProducto();
 
 
 

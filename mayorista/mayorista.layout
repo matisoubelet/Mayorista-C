@@ -2,69 +2,74 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="src\Producto.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
+	<File name="src\ListadoProveedor.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="234" topLine="3" />
+			<Cursor1 position="1295" topLine="34" />
 		</Cursor>
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="9" zoom_2="0">
+	<File name="MenuABM.h" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="302" topLine="0" />
+			<Cursor1 position="69" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\Empleado.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
+	<File name="include\Empleado.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="275" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\Proveedor.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="12" zoom_2="0">
+	<File name="src\Producto.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="903" topLine="17" />
+			<Cursor1 position="324" topLine="3" />
 		</Cursor>
 	</File>
-	<File name="include\Hypermarket.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="9" zoom_2="0">
+	<File name="src\ListadoHypermarket.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="696" topLine="9" />
 		</Cursor>
 	</File>
-	<File name="MenuABM.h" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="9" zoom_2="0">
+	<File name="include\Producto.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="200" topLine="0" />
+			<Cursor1 position="523" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\Hypermarket.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\Proveedor.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="12" zoom_2="0">
+	<File name="include\Proveedor.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="135" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\MenuABM.cpp" open="1" top="1" tabpos="12" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3292" topLine="105" />
+			<Cursor1 position="254" topLine="3" />
 		</Cursor>
 	</File>
-	<File name="include\Producto.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
+	<File name="include\ListadoProveedor.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="70" topLine="0" />
+			<Cursor1 position="103" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\ListadoProveedor.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="788" topLine="7" />
-		</Cursor>
-	</File>
-	<File name="include\ListadoProveedor.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Empleado.cpp" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
+	<File name="src\Empleado.cpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="2559" topLine="92" />
+		</Cursor>
+	</File>
+	<File name="src\MenuABM.cpp" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3292" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Proveedor.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="12" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="903" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="include\Hypermarket.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="207" topLine="1" />
+		</Cursor>
+	</File>
+	<File name="src\Hypermarket.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1297" topLine="21" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

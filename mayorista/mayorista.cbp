@@ -39,12 +39,14 @@
 		<Unit filename="MenuABM.h" />
 		<Unit filename="include/Empleado.h" />
 		<Unit filename="include/Hypermarket.h" />
+		<Unit filename="include/ListadoHypermarket.h" />
 		<Unit filename="include/ListadoProveedor.h" />
 		<Unit filename="include/Producto.h" />
 		<Unit filename="include/Proveedor.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Empleado.cpp" />
 		<Unit filename="src/Hypermarket.cpp" />
+		<Unit filename="src/ListadoHypermarket.cpp" />
 		<Unit filename="src/ListadoProveedor.cpp" />
 		<Unit filename="src/MenuABM.cpp" />
 		<Unit filename="src/Producto.cpp" />

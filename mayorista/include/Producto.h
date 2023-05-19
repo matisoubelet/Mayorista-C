@@ -6,7 +6,7 @@ private:
 
     char _nombre[20];
     float _precio;
-    int _id, _tipoDeProducto;
+    int _id, _tipoDeProducto, _cantidad;
 
 public:
 
@@ -18,12 +18,14 @@ public:
     void setPrecio(float);
     void setID(int);
     void setTipoDeProducto(int);
+    void setCantidad(int);
 
     ///Getters:
     const char* getNombre();
     float getPrecio();
     int getID();
     int getTipoDeProducto();
+    int getCantidad();
 
 
 

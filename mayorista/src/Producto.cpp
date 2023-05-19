@@ -24,8 +24,10 @@ void Producto::Cargar() {
     cin >> _tipoDeProducto;
     cout << endl;
 
+    cout << "Cantidad: ";
+    cin >> _cantidad;
+    cout << endl;
 }
-
 
 void Producto::Mostrar() {
 
@@ -34,6 +36,7 @@ void Producto::Mostrar() {
     cout << "Precio: " << _precio <<endl;
     cout << "ID: " << _id <<endl;
     cout << "Tipo de Producto: " << _tipoDeProducto <<endl;
+    cout << "Cantidad: " << _cantidad << endl;
     cout << "----------------------" << endl << endl;
 }
 
@@ -53,6 +56,10 @@ void Producto::setTipoDeProducto(int tipoDeProducto) {
     _tipoDeProducto = tipoDeProducto;
 }
 
+void Producto::setCantidad(int cantidad) {
+    _cantidad = cantidad;
+}
+
 int Producto::getID() {
     return _id;
 }
@@ -68,3 +75,8 @@ float Producto::getPrecio() {
 int Producto::getTipoDeProducto() {
     return _tipoDeProducto;
 }
+
+int Producto::getCantidad() {
+    return _cantidad;
+}
+
