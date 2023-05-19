@@ -14,6 +14,7 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="include" />
+					<Add directory="../mayorista" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -24,6 +25,7 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="include" />
+					<Add directory="../mayorista" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -34,6 +36,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="MenuABM.h" />
 		<Unit filename="include/Empleado.h" />
 		<Unit filename="include/Hypermarket.h" />
 		<Unit filename="include/ListadoProveedor.h" />
@@ -43,6 +46,7 @@
 		<Unit filename="src/Empleado.cpp" />
 		<Unit filename="src/Hypermarket.cpp" />
 		<Unit filename="src/ListadoProveedor.cpp" />
+		<Unit filename="src/MenuABM.cpp" />
 		<Unit filename="src/Producto.cpp" />
 		<Unit filename="src/Proveedor.cpp" />
 		<Extensions>

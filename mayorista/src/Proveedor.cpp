@@ -4,7 +4,6 @@ using namespace std;
 
 void Proveedor::mostrar()
 {
-
     int tipoDeProducto, mostrarMas;
     ListadoProveedor listado;
 
@@ -34,7 +33,5 @@ void Proveedor::mostrar()
 
     }
     while(mostrarMas == 1);
-
-
 
 }

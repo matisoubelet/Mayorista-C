@@ -8,7 +8,6 @@ class Proveedor
 
         void mostrar();
 
-
     private:
 
         float _descuentoBulto = 0.85;
