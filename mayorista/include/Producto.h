@@ -10,6 +10,7 @@ private:
 
 public:
 
+
     void Cargar();
     void Mostrar();
 

@@ -9,9 +9,9 @@ using namespace std;
 int main()
 {
 
-    //Hypermarket local;
+    Hypermarket local;
 
-    //local.menu();
+    local.menu();
 
     ListadoHypermarket listado;
 

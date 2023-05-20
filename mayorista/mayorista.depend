@@ -156,3 +156,69 @@
 	"Producto.h"
 	"Hypermarket.h"
 
+1684586518 source:c:\users\usuario\desktop\utn 3er cuatrimestre\laboratorio de computación 2\proyecto labo 2\mayorista-c\mayorista\main.cpp
+	<iostream>
+	"Hypermarket.h"
+	"Producto.h"
+	"ListadoProveedor.h"
+	"Proveedor.h"
+	"ListadoHypermarket.h"
+
+1684279143 c:\users\usuario\desktop\utn 3er cuatrimestre\laboratorio de computación 2\proyecto labo 2\mayorista-c\mayorista\include\hypermarket.h
+
+1684598491 c:\users\usuario\desktop\utn 3er cuatrimestre\laboratorio de computación 2\proyecto labo 2\mayorista-c\mayorista\include\producto.h
+
+1684598560 c:\users\usuario\desktop\utn 3er cuatrimestre\laboratorio de computación 2\proyecto labo 2\mayorista-c\mayorista\include\listadoproveedor.h
+	"Producto.h"
+
+1684585639 c:\users\usuario\desktop\utn 3er cuatrimestre\laboratorio de computación 2\proyecto labo 2\mayorista-c\mayorista\include\proveedor.h
+	"ListadoProveedor.h"
+
+1684598560 c:\users\usuario\desktop\utn 3er cuatrimestre\laboratorio de computación 2\proyecto labo 2\mayorista-c\mayorista\include\listadohypermarket.h
+	"Producto.h"
+	"Hypermarket.h"
+
+1684585639 source:c:\users\usuario\desktop\utn 3er cuatrimestre\laboratorio de computación 2\proyecto labo 2\mayorista-c\mayorista\src\empleado.cpp
+	<iostream>
+	"Empleado.h"
+	<cstring>
+
+1684585639 c:\users\usuario\desktop\utn 3er cuatrimestre\laboratorio de computación 2\proyecto labo 2\mayorista-c\mayorista\include\empleado.h
+
+1684596293 source:c:\users\usuario\desktop\utn 3er cuatrimestre\laboratorio de computación 2\proyecto labo 2\mayorista-c\mayorista\src\hypermarket.cpp
+	<iostream>
+	"Hypermarket.h"
+	"Proveedor.h"
+
+1684598560 source:c:\users\usuario\desktop\utn 3er cuatrimestre\laboratorio de computación 2\proyecto labo 2\mayorista-c\mayorista\src\listadohypermarket.cpp
+	<iostream>
+	"ListadoHypermarket.h"
+
+1684598559 source:c:\users\usuario\desktop\utn 3er cuatrimestre\laboratorio de computación 2\proyecto labo 2\mayorista-c\mayorista\src\listadoproveedor.cpp
+	<iostream>
+	"ListadoProveedor.h"
+
+1684598491 source:c:\users\usuario\desktop\utn 3er cuatrimestre\laboratorio de computación 2\proyecto labo 2\mayorista-c\mayorista\src\menuabm.cpp
+	<iostream>
+	"Hypermarket.h"
+	"MenuABM.h"
+	<cstring>
+	<cstdlib>
+	"Empleado.h"
+
+1684585639 c:\users\usuario\desktop\utn 3er cuatrimestre\laboratorio de computación 2\proyecto labo 2\mayorista-c\mayorista\menuabm.h
+
+1684598491 source:c:\users\usuario\desktop\utn 3er cuatrimestre\laboratorio de computación 2\proyecto labo 2\mayorista-c\mayorista\src\producto.cpp
+	<iostream>
+	<cstring>
+	"Producto.h"
+	"funciones.h"
+
+1684279143 c:\users\usuario\desktop\utn 3er cuatrimestre\laboratorio de computación 2\proyecto labo 2\mayorista-c\mayorista\include\funciones.h
+
+1684600644 source:c:\users\usuario\desktop\utn 3er cuatrimestre\laboratorio de computación 2\proyecto labo 2\mayorista-c\mayorista\src\proveedor.cpp
+	<iostream>
+	<chrono>
+	<thread>
+	"Proveedor.h"
+
