@@ -13,9 +13,12 @@ int main()
 
     local.menu();
 
-    ListadoHypermarket listado;
+    /*ListadoHypermarket listado;
 
-    listado.cargarProducto();
+    listado.cargarProducto();*/
+
+    Producto pro;
+    pro.Cargar();
 
 
 

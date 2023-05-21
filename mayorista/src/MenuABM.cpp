@@ -7,7 +7,7 @@
 using namespace std;
 
 void MenuABM::CargarMenuAdmin() {
-    int opcion;
+
     do {
         cout << "+===================+" << endl;
         cout << "|     -AMB DE EMPLEADOS-" << endl;
@@ -24,9 +24,9 @@ void MenuABM::CargarMenuAdmin() {
         cin >> opcion;
         cout << endl;
 
-        while(opcion < 0 || opcion > 5) {
+        while(opcion < '0' || opcion > '5') {
 
-            cout << "ESE VALOR ES INEXISTENTE, POR FAVOR SELECCIONE OTRA OPCION: ";
+            OpcionNoValida();
             cin >> opcion;
             cout << endl;
 

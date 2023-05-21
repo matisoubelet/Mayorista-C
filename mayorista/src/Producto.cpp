@@ -8,8 +8,7 @@ using namespace std;
 void Producto::Cargar() {
 
     cout << "Nombre: ";
-    cin.getline(_nombre, 20);
-    cin.ignore();
+    scanf("%s",_nombre);
     cout << endl;
 
     cout << "Precio: ";

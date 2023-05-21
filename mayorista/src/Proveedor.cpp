@@ -1,15 +1,27 @@
 #include<iostream>
+<<<<<<< HEAD
 #include <chrono>
 #include <thread>
 #include "Proveedor.h"
 using namespace std;
 using std::this_thread::sleep_for;
 using namespace std::chrono_literals;
+=======
+//#include <thread>
+#include "Proveedor.h"
+using namespace std;
+//using namespace this_thread;
+
+>>>>>>> mayorista
 
 void Proveedor::mostrar()
 {
     int tipoDeProducto;
+<<<<<<< HEAD
     char menu, mostrarMas='0';
+=======
+    char mostrarMas='0';
+>>>>>>> mayorista
     ListadoProveedor listado;
     do
     {
@@ -22,6 +34,7 @@ void Proveedor::mostrar()
         cout << "| 4 - ART. LIMPIEZA   |" << endl;
         cout << "+=====================+" << endl;
         cout << "Que tipo de producto esta buscando?: ";
+<<<<<<< HEAD
         cin >> menu;
         cout << endl << endl;
 
@@ -29,6 +42,15 @@ void Proveedor::mostrar()
         if(menu>'0' && menu<'5'){
 
             tipoDeProducto=isdigit(menu);
+=======
+        cin >> opcion;
+        cout << endl << endl;
+
+
+        if(opcion>'0' && opcion<'5'){
+
+            tipoDeProducto=isdigit(opcion);
+>>>>>>> mayorista
             cout<<tipoDeProducto<< endl;
             listado.listadoProductos(tipoDeProducto);
 
@@ -43,16 +65,26 @@ void Proveedor::mostrar()
             case '0':
                 break;
             default:
+<<<<<<< HEAD
                 cout <<"ESE VALOR ES INEXISTENTE";
                 mostrarMas ='1';
                 sleep_for(800ms);
+=======
+               OpcionNoValida();
+                mostrarMas ='1';
+>>>>>>> mayorista
                 break;
             }
         }
         else{
+<<<<<<< HEAD
             cout<< "ESE VALOR ES INEXISTENTE, POR FAVOR SELECCIONE OTRA OPCION: ";
             mostrarMas ='1';
             sleep_for(800ms);
+=======
+            OpcionNoValida();
+            mostrarMas ='1';
+>>>>>>> mayorista
 
         }
 

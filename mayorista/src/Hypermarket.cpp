@@ -5,7 +5,10 @@ using namespace std;
 
 void Hypermarket::menu()
 {
+<<<<<<< HEAD
     char opcion;
+=======
+>>>>>>> mayorista
 
     do
     {
@@ -27,7 +30,7 @@ void Hypermarket::menu()
         while(opcion < '0' || opcion > '5')
         {
 
-            cout << "ESE VALOR ES INEXISTENTE, POR FAVOR SELECCIONE OTRA OPCION: ";
+            OpcionNoValida();
             cin >> opcion;
             cout << endl;
 
@@ -69,5 +72,4 @@ void Hypermarket::comprar(){
     proveedor.mostrar();
 
 }
-
 
