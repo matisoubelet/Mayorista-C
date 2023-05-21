@@ -1,8 +1,8 @@
 #ifndef HYPERMARKET_H
 #define HYPERMARKET_H
+#include "Menu.h"
 
-
-class Hypermarket
+class Hypermarket : public Menu
 {
     public:
 

@@ -1,8 +1,9 @@
 #ifndef PROVEEDOR_H
 #define PROVEEDOR_H
 #include "ListadoProveedor.h"
+#include "Menu.h"
 
-class Proveedor
+class Proveedor : Menu
 {
     public:
 
