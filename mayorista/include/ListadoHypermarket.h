@@ -9,6 +9,9 @@ class ListadoHypermarket
 
         void listadoProductos(int);
         void cargarProducto();
+        void cargarFondos();
+        void modificarFondos(float monto);
+        float fondos();
 
 };
 

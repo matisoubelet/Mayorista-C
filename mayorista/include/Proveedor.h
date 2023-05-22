@@ -1,6 +1,7 @@
 #ifndef PROVEEDOR_H
 #define PROVEEDOR_H
 #include "ListadoProveedor.h"
+#include "ListadoHypermarket.h"
 #include "Menu.h"
 
 class Proveedor : Menu
