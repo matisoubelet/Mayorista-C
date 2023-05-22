@@ -39,10 +39,12 @@ void MenuABM::CargarMenuAdmin() {
             break;
 
         case 2:
-            cout<<"Ingrese el DNI del empleado a Dar de baja: "<<endl;
-            int dni;
-            cin >> dni;
-            BajaEmpleado(dni);
+            cout<<"Ingrese el Legajo del empleado a dar de baja: "<<endl;
+            int leg;
+            cin >> leg;
+            if(BajaEmpleado(leg)!=1){
+                cout<<"No se pudo dar de baja el empleado"<<endl;
+            }
             break;
 
         case 3:
@@ -50,11 +52,11 @@ void MenuABM::CargarMenuAdmin() {
             break;
 
         case 4:
-            ListarVinculados();
+            ListarEmpleadosActivos();
             break;
 
         case 5:
-            ListarDesvinculados();
+            ListarEmpleadosInactivos();
             break;
 
         }
@@ -115,32 +117,31 @@ int MenuABM::BuscarEmpleado(int dni) {
 }
 
 
+int MenuABM::BajaEmpleado(int legajo){
+ FILE *p;
+ Empleado empleado;
 
-void MenuABM::BajaEmpleado(int dni) {
+ int escribio;
+ p=fopen("Empleados.dat","rb+");
 
-
-    FILE* pEmpleado;
-    Empleado empleado;
-
-    pEmpleado = fopen("Empleados.dat","rb+");
-
-    if(pEmpleado == NULL) {
-        cout << "ERROR DE LECTURA, NO SE PUDO ABRIR EL ARCHIVO" << endl;
-        fclose(pEmpleado);
-        return;
+    if(p==NULL){
+        cout<<"ERROR DE LECTURA, NO SE PUDO ABRIR EL ARCHIVO";
+        return -1;
     }
 
-    while(fread(&empleado,sizeof(Empleado),1,pEmpleado)==1) {
-        if(empleado.getDni()==dni) {
+ while(fread(&empleado, sizeof (Empleado), 1, p)==1) {
+        if(legajo == empleado.getLegajo()){
             empleado.setEstado(false);
-            fwrite(&empleado, sizeof (Empleado), 1, pEmpleado);
-            break;
-        }
+            fseek(p, ftell(p)-sizeof (Empleado), 0);
+            escribio=fwrite(&empleado, sizeof (Empleado), 1, p);
+            fclose(p);
+        return escribio;
     }
-
-    fclose(pEmpleado);
-    return ;
+ }
+    fclose(p);
+    return -2;
 }
+
 
 
 void MenuABM::ModificarEmpleado() {
@@ -148,46 +149,46 @@ void MenuABM::ModificarEmpleado() {
 
 }
 
-void MenuABM::ListarVinculados() {
-    FILE* pEmpleado;
+bool MenuABM::ListarEmpleadosActivos() {
+    FILE* p;
     Empleado empleado;
 
-    pEmpleado = fopen("Empleados.dat","rb");
+    p = fopen("Empleados.dat","rb");
 
-    if(pEmpleado == NULL) {
+    if(p == NULL) {
         cout << "ERROR DE LECTURA, NO SE PUDO ABIR EL ARCHIVO" << endl;
-        fclose(pEmpleado);
-        return;
+        fclose(p);
+        return false;
     }
 
-    while(fread(&empleado,sizeof(Empleado),1,pEmpleado)==1) {
+    while(fread(&empleado,sizeof(Empleado),1,p)==1) {
 
         if(empleado.GetEstado()==true) {
             empleado.Mostrar();
         }
     }
-    fclose(pEmpleado);
-    return ;
+    fclose(p);
+    return true;
 }
 
-void MenuABM::ListarDesvinculados() {
-    FILE* pEmpleado;
+bool MenuABM::ListarEmpleadosInactivos() {
+    FILE* p;
     Empleado empleado;
 
-    pEmpleado = fopen("Empleados.dat","rb");
+    p = fopen("Empleados.dat","rb");
 
-    if(pEmpleado == NULL) {
+    if(p == NULL) {
         cout << "ERROR DE LECTURA, NO SE PUDO ABIR EL ARCHIVO" << endl;
-        fclose(pEmpleado);
-        return;
+        fclose(p);
+        return false;
     }
 
-    while(fread(&empleado,sizeof(Empleado),1,pEmpleado)==1) {
+    while(fread(&empleado,sizeof(Empleado),1,p)==1) {
 
         if(empleado.GetEstado()==false) {
             empleado.Mostrar();
         }
     }
-    fclose(pEmpleado);
-    return ;
+    fclose(p);
+    return true;
 }
