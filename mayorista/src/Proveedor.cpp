@@ -12,6 +12,7 @@ void Proveedor::mostrar()
     char mostrarMas='0';
     ListadoProveedor listado;
     ListadoHypermarket local;
+    //Hypermarket hypermarket;
 
     do
     {
@@ -48,7 +49,8 @@ void Proveedor::mostrar()
             }
 
             precio = listado.enseniarCompra(idCompra);
-            fondos = local.fondos();
+            fondos = local.mostrarFondos();
+            cout << "FONDOS: " << fondos << endl;
 
             cout << "Desea comprar en unidades o en bultos (10 unidades): (Unidades: 1 | Bultos: 2): ";
             cin >> UoB;
@@ -85,10 +87,9 @@ void Proveedor::mostrar()
             {
                 fondos -= precio;
                 local.modificarFondos(fondos);
+                local.modificarInventario(true, idCompra, opcion, cantCompra);
                 cout << "Compra realizada!" << endl;
             }
-
-
 
             precio = 0;
             cantCompra = 0;

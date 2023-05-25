@@ -1,6 +1,7 @@
 #ifndef HYPERMARKET_H
 #define HYPERMARKET_H
 #include "Menu.h"
+#include "ListadoHypermarket.h"
 
 class Hypermarket : public Menu
 {
@@ -14,7 +15,7 @@ class Hypermarket : public Menu
         ///void agregarProducto();
         ///void borrarProducto();
 
-        void setFondos(float);
+        void setFondos(float fondos);
         float getFondos();
 
     private:

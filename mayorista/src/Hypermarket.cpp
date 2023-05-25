@@ -56,7 +56,7 @@ void Hypermarket::menu()
             break;
 
         case '4':
-            /// Hypermarket::inventario();
+            Hypermarket::inventario();
             break;
 
         case '5':
@@ -74,6 +74,13 @@ void Hypermarket::comprar(){
 
     Proveedor proveedor;
     proveedor.mostrar();
+
+}
+
+void Hypermarket::inventario(){
+
+    ListadoHypermarket local;
+    local.listadoProductos(0);
 
 }
 

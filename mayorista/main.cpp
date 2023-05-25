@@ -15,5 +15,8 @@ int main()
     Hypermarket local;
     local.menu();
 
+    //ListadoHypermarket listado;
+    //listado.cargarFondos();
+
     return 0;
 }
