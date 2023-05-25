@@ -73,7 +73,7 @@ void Hypermarket::menu()
 void Hypermarket::comprar(){
 
     Proveedor proveedor;
-    proveedor.mostrar();
+    proveedor.menu();
 
 }
 

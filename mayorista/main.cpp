@@ -12,11 +12,14 @@ int main()
     //MenuABM menu;
     //menu.CargarMenuAdmin();
 
-    Hypermarket local;
-    local.menu();
+    //Hypermarket local;
+    //local.menu();
 
     //ListadoHypermarket listado;
     //listado.cargarFondos();
+
+    Proveedor prov;
+    prov.menu();
 
     return 0;
 }

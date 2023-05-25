@@ -3,25 +3,24 @@
 #include "Menu.h"
 #include "ListadoHypermarket.h"
 
-class Hypermarket : public Menu
-{
-    public:
+class Hypermarket : public Menu {
+private:
+    float _fondos, _precioPorBulto = 1.25, _precioPorUnidad = 1.10;
+    int _precioEntrega = 1500;
 
-        void menu();
-        void comprar();
-        void vender();
-        void pagos();
-        void inventario();
-        ///void agregarProducto();
-        ///void borrarProducto();
+public:
 
-        void setFondos(float fondos);
-        float getFondos();
+    void menu();
+    void comprar();
+    void vender();
+    void pagos();
+    void inventario();
+    ///void agregarProducto();
+    ///void borrarProducto();
 
-    private:
+    void setFondos(float fondos);
+    float getFondos();
 
-        float _fondos, _precioPorBulto = 1.25, _precioPorUnidad = 1.10;
-        int _precioEntrega = 1500;
 };
 
 #endif // HYPERMARKET_H

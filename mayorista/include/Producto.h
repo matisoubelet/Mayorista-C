@@ -28,8 +28,6 @@ public:
     int getCantidad();
 
 
-
-
 };
 
 #endif // PRODUCTO_H

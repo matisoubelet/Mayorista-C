@@ -1,20 +1,21 @@
 #ifndef PROVEEDOR_H
 #define PROVEEDOR_H
+#include<iostream>
+#include "Menu.h"
 #include "ListadoProveedor.h"
 #include "ListadoHypermarket.h"
-#include "Menu.h"
+#include "Proveedor.h"
 
-class Proveedor : Menu
-{
-    public:
 
-        void mostrar();
+using namespace std;
 
-    private:
+class Proveedor : Menu {
 
-        float _descuentoBulto = 0.85;
-        bool _comproBulto = false;
-        int _precioEntrega = 1000, _bulto = 10;
+
+public:
+
+    void menu();
+    void comprar(int );
 
 };
 
