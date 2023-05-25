@@ -4,23 +4,28 @@
 #include "ListadoProveedor.h"
 #include "Proveedor.h"
 #include "ListadoHypermarket.h"
+#include "MenuABM.h"
 using namespace std;
 
 int main()
 {
+    //MenuABM menu;
+    //menu.CargarMenuAdmin();
 
+<<<<<<< HEAD
     Hypermarket local;
 
     local.menu();
+=======
+    //Hypermarket local;
+    //local.menu();
+>>>>>>> mayorista
 
-    /*ListadoHypermarket listado;
+    //ListadoHypermarket listado;
+    //listado.cargarFondos();
 
-    listado.cargarProducto();*/
-
-    Producto pro;
-    pro.Cargar();
-
-
+    Proveedor prov;
+    prov.menu();
 
     return 0;
 }

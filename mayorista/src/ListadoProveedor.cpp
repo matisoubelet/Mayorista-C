@@ -10,7 +10,7 @@ void ListadoProveedor::cargarProducto()
     p = fopen("listadoProductos.dat", "ab");
     if(p == NULL)
     {
-        cout << "No se ha podido abrir el archivo." << endl;
+        cout << "No se ha podido abrir el archivo ListadoProductos." << endl;
         fclose(p);
         return;
     }
@@ -37,7 +37,7 @@ void ListadoProveedor::listadoProductos(int tipoDeProducto){
     p = fopen("listadoProductos.dat", "rb");
     if(p == NULL)
         {
-            cout << "No se ha podido abrir el archivo." << endl;
+            cout << "No se ha podido abrir el archivo ListadoProductos." << endl;
             fclose(p);
             return;
         }
@@ -52,3 +52,26 @@ void ListadoProveedor::listadoProductos(int tipoDeProducto){
 
     fclose(p);
 }
+
+float ListadoProveedor::enseniarCompra(int idCompra){
+
+    Producto producto;
+    FILE *p;
+
+    p = fopen("listadoProductos.dat", "rb");
+    if(p == NULL)
+        {
+            cout << "No se ha podido abrir el archivo ListadoProductos." << endl;
+            fclose(p);
+            return -1;
+        }
+
+    while(fread(&producto, sizeof(Producto), 1, p) != 0){
+
+        if(idCompra == producto.getID()){
+            producto.Mostrar();
+            return producto.getPrecio();
+        }
+    }
+}
+

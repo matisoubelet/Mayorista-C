@@ -11,7 +11,7 @@ class Empleado
         int _legajo;
         float _sueldo;
         char _tareas[100];
-        char _permisos[100];
+        int _permisos;
         bool _estado;
 
    public:
@@ -41,8 +41,8 @@ class Empleado
         const char *getTareas();
 
         ///PERMISOS
-        void setPermisos(const char* permisos);
-        const char *getPermisos();
+        void setPermisos(int permisos);
+        int getPermisos();
 
         ///ACTIVO
         void setEstado(bool act);

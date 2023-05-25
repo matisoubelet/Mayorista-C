@@ -5,76 +5,93 @@ using namespace std;
 
 
 ///DNI
-void Empleado::setDni(int dni) {
+void Empleado::setDni(int dni)
+{
     _dni = dni;
 }
-int Empleado::getDni() {
+int Empleado::getDni()
+{
     return _dni;
 }
 
 ///NOMBRRE
-void Empleado::setNombre(const char* nombre) {
+void Empleado::setNombre(const char* nombre)
+{
     strcpy(_nombre, nombre);
 }
 
-const char* Empleado::getNombre() {
+const char* Empleado::getNombre()
+{
     return _nombre;
 }
 
 ///APELLIDO
-void Empleado::setApellido(const char* apellido) {
+void Empleado::setApellido(const char* apellido)
+{
     strcpy(_apellido, apellido);
 }
 
-const char* Empleado::getApellido() {
+const char* Empleado::getApellido()
+{
     return _apellido;
 }
 
 ///LEGAJO
-void Empleado::setLegajo(int legajo) {
+void Empleado::setLegajo(int legajo)
+{
     _legajo = legajo;
 }
-int Empleado::getLegajo() {
+int Empleado::getLegajo()
+{
     return _legajo;
 }
 
 ///SUELDO
-void Empleado::setSueldo(float sueldo) {
+void Empleado::setSueldo(float sueldo)
+{
     _sueldo = sueldo;
 }
-float Empleado::getSueldo() {
+float Empleado::getSueldo()
+{
     return _sueldo;
 }
 
 
 ///TAREAS
-void Empleado::setTareas(const char* tareas) {
+void Empleado::setTareas(const char* tareas)
+{
     strcpy(_tareas, tareas);
 }
 
-const char* Empleado::getTareas() {
+const char* Empleado::getTareas()
+{
     return _tareas;
 }
 
 ///PERMISOS
-void Empleado::setPermisos(const char* permisos) {
-    strcpy(_permisos, permisos);
+void Empleado::setPermisos(int permisos)
+{
+    _permisos = permisos;
 }
 
-const char* Empleado::getPermisos() {
+int Empleado::getPermisos()
+{
     return _permisos;
 }
 
 
 ///ACTIVO
-void Empleado::setEstado(bool act) {
+void Empleado::setEstado(bool act)
+{
     _estado=act;
 }
-bool Empleado::GetEstado() {
+bool Empleado::GetEstado()
+{
     return _estado;
 }
 
-void Empleado::Cargar() {
+void Empleado::Cargar()
+{
     cout << "NOMBRE DEL EMPLEADO: " << endl;
     cin.getline(_nombre, 30);
     cin.ignore();
@@ -97,13 +114,13 @@ void Empleado::Cargar() {
     cin.ignore();
     cout << endl;
     cout << "PERMISOS DEL EMPLEADO: " << endl;
-    cin.getline(_permisos, 100);
-    cin.ignore();
+    cin >> _permisos;
     cout << endl;
     _estado=true;
 }
 
-void Empleado::Mostrar() {
+void Empleado::Mostrar()
+{
 
     cout << "NOMBRE DEL EMPLEADO: " << getNombre() << endl;
     cout << "APELLIDO DEL EMPLEADO: " << getApellido() << endl;

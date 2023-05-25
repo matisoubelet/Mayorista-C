@@ -1,8 +1,6 @@
-#include <iostream>
-#include <stdlib.h>
 #include "Menu.h"
 
 void Menu::OpcionNoValida(){
-cout<< "ESE VALOR ES INEXISTENTE, POR FAVOR SELECCIONE OTRA OPCION: ";
+cout<< "Opcion no validad, por favor seleccione un valor permitido: ";
 sleep_for(2000ms);
 }

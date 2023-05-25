@@ -20,28 +20,29 @@
 
 1683512718 c:\users\matis\desktop\zerafin\facultad\labo ii\codeblocks\clases\mayorista\include\empleado.h
 
-1684529957 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\main.cpp
+1684978176 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\main.cpp
 	<iostream>
 	"Hypermarket.h"
 	"Producto.h"
 	"ListadoProveedor.h"
 	"Proveedor.h"
 	"ListadoHypermarket.h"
+	"MenuABM.h"
 
-1684527827 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\empleado.cpp
+1684787299 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\empleado.cpp
 	<iostream>
 	"Empleado.h"
 	<cstring>
 
-1684527827 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\empleado.h
+1684786975 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\empleado.h
 
-1684529610 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\producto.cpp
+1684791527 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\producto.cpp
 	<iostream>
 	<cstring>
 	"Producto.h"
 	"funciones.h"
 
-1684529158 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\producto.h
+1684791527 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\producto.h
 
 1683512295 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\proveedores.cpp
 	<iostream>
@@ -49,26 +50,30 @@
 
 1683512487 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\proveedores.h
 
-1684527827 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\proveedor.cpp
+1684977646 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\proveedor.cpp
 	<iostream>
 	"Proveedor.h"
 
-1684527827 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\proveedor.h
+1684792509 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\proveedor.h
 	"ListadoProveedor.h"
+	"ListadoHypermarket.h"
+	"Menu.h"
 
-1684527827 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\listadoproveedor.cpp
+1684794068 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\listadoproveedor.cpp
 	<iostream>
 	"ListadoProveedor.h"
 
-1684185915 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\listadoproveedor.h
+1684794046 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\listadoproveedor.h
 	"Producto.h"
 
-1684187599 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\hypermarket.cpp
+1684975750 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\hypermarket.cpp
 	<iostream>
 	"Hypermarket.h"
 	"Proveedor.h"
 
-1684528754 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\hypermarket.h
+1684975750 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\hypermarket.h
+	"Menu.h"
+	"ListadoHypermarket.h"
 
 1683844209 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\comida.cpp
 	<iostream>
@@ -83,43 +88,48 @@
 	<iostream>
 	<cstring>
 
-1684709360 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\main.cpp
+1684993282 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\main.cpp
 	<iostream>
 	"Hypermarket.h"
 	"Producto.h"
 	"ListadoProveedor.h"
 	"Proveedor.h"
 	"ListadoHypermarket.h"
+	"MenuABM.h"
 
-1684708140 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\hypermarket.h
+1684985222 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\hypermarket.h
 	"Menu.h"
+	"ListadoHypermarket.h"
 
-1684705632 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\producto.h
+1684984306 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\producto.h
 
-1684278462 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\listadoproveedor.h
+1684798405 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\listadoproveedor.h
 	"Producto.h"
 
-1684708184 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\proveedor.h
-	"ListadoProveedor.h"
+1684993510 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\proveedor.h
+	<iostream>
 	"Menu.h"
+	"ListadoProveedor.h"
+	"ListadoHypermarket.h"
+	"Proveedor.h"
 
-1684470124 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\empleado.cpp
+1684798405 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\empleado.cpp
 	<iostream>
 	"Empleado.h"
 	<cstring>
 
-1684467073 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\empleado.h
+1684798405 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\empleado.h
 
-1684708615 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\hypermarket.cpp
+1684988983 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\hypermarket.cpp
 	<iostream>
 	"Hypermarket.h"
 	"Proveedor.h"
 
-1684283433 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\listadoproveedor.cpp
+1684987543 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\listadoproveedor.cpp
 	<iostream>
 	"ListadoProveedor.h"
 
-1684710092 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\producto.cpp
+1684798405 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\producto.cpp
 	<iostream>
 	<cstring>
 	"Producto.h"
@@ -127,11 +137,10 @@
 
 1684278462 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\funciones.h
 
-1684708615 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\proveedor.cpp
-	<iostream>
+1684994959 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\proveedor.cpp
 	"Proveedor.h"
 
-1684708731 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\menuabm.cpp
+1684798405 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\menuabm.cpp
 	<iostream>
 	"Hypermarket.h"
 	"MenuABM.h"
@@ -139,9 +148,9 @@
 	<cstdlib>
 	"Empleado.h"
 
-1684708731 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\menuabm.h
+1684798405 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\menuabm.h
 
-1684527827 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\menuabm.cpp
+1684790266 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\menuabm.cpp
 	<iostream>
 	"Hypermarket.h"
 	"MenuABM.h"
@@ -149,16 +158,17 @@
 	<cstdlib>
 	"Empleado.h"
 
-1684527827 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\menuabm.h
+1684787414 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\menuabm.h
 
-1684528828 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\listadohypermarket.cpp
+1684977284 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\listadohypermarket.cpp
 	<iostream>
 	"ListadoHypermarket.h"
 
-1684529158 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\listadohypermarket.h
+1684976081 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\listadohypermarket.h
 	"Producto.h"
 	"Hypermarket.h"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 1684586518 source:c:\users\usuario\desktop\utn 3er cuatrimestre\laboratorio de computación 2\proyecto labo 2\mayorista-c\mayorista\main.cpp
 	<iostream>
@@ -227,17 +237,28 @@
 	"Proveedor.h"
 =======
 1684705632 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\listadohypermarket.h
+=======
+1684979527 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\listadohypermarket.h
+>>>>>>> mayorista
 	"Producto.h"
 	"Hypermarket.h"
 
-1684705632 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\listadohypermarket.cpp
+1684979527 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\listadohypermarket.cpp
 	<iostream>
 	"ListadoHypermarket.h"
 
-1684708482 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\menu.h
+1684986196 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\menu.h
+	<iostream>
+	<stdlib.h>
 	<thread>
 
-1684708567 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\menu.cpp
+1684986196 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\menu.cpp
+	"Menu.h"
+
+1684785519 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\menu.h
+	<thread>
+
+1684785519 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\menu.cpp
 	<iostream>
 	<stdlib.h>
 	"Menu.h"

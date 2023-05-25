@@ -3,6 +3,14 @@
 #include "Proveedor.h"
 using namespace std;
 
+void Hypermarket::setFondos(float fondos){
+    _fondos = fondos;
+}
+
+float Hypermarket::getFondos(){
+    return _fondos;
+}
+
 void Hypermarket::menu()
 {
 <<<<<<< HEAD
@@ -52,7 +60,7 @@ void Hypermarket::menu()
             break;
 
         case '4':
-            /// Hypermarket::inventario();
+            Hypermarket::inventario();
             break;
 
         case '5':
@@ -69,7 +77,14 @@ void Hypermarket::menu()
 void Hypermarket::comprar(){
 
     Proveedor proveedor;
-    proveedor.mostrar();
+    proveedor.menu();
+
+}
+
+void Hypermarket::inventario(){
+
+    ListadoHypermarket local;
+    local.listadoProductos(0);
 
 }
 
