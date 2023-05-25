@@ -35,7 +35,6 @@ void ListadoHypermarket::listadoProductos(int tipoDeProducto = 0)
     Hypermarket local;
     Producto producto;
     FILE *p, *f;
-    float fondos;
 
     p = fopen("listadoHypermarket.dat", "rb");
     if(p == NULL)
@@ -71,11 +70,11 @@ void ListadoHypermarket::listadoProductos(int tipoDeProducto = 0)
             }
         }
     }
-    while(fread(&local, sizeof(Hypermarket), 1, f) != 0)
-    {
-        cout << "Fondos: " << local.getFondos() << endl;
-    }
+
+    fread(&local, sizeof(Hypermarket), 1, f);
+    cout << "Fondos: " << local.getFondos() << endl;
     system("pause");
+
     fclose(f);
     fclose(p);
 }
@@ -109,7 +108,6 @@ void ListadoHypermarket::modificarFondos(float monto)
 
     FILE *p;
     Hypermarket local;
-    int totalFondos;
 
     p = fopen("fondosHypermarket.dat", "ab");
     if(p == NULL)
@@ -119,19 +117,11 @@ void ListadoHypermarket::modificarFondos(float monto)
         return;
     }
 
-    while(fread(&local, sizeof (Hypermarket), 1, p) != 0)
-    {
-
-        local.setFondos(monto);
-        fseek(p, ftell(p)-sizeof (Hypermarket), 0);
-        fwrite(&local, sizeof (Hypermarket), 1, p);
-
-    }
-
-
+    fread(&local, sizeof (Hypermarket), 1, p);
+    local.setFondos(monto);
+    fwrite(&local, sizeof (Hypermarket), 1, p);
 
     fclose(p);
-
 }
 
 float ListadoHypermarket::mostrarFondos()
@@ -150,7 +140,7 @@ float ListadoHypermarket::mostrarFondos()
 
     while(fread(&local, sizeof (Hypermarket), 1, p) != 0)
     {
-        local.getFondos();
+        return local.getFondos();
     }
     fclose(p);
 }
@@ -160,7 +150,7 @@ void ListadoHypermarket::modificarInventario(bool sumaOresta, int idProducto, in
 
     Producto producto;
     FILE *p;
-    int aux;
+    int aux, pos = 0;
 
     p = fopen("listadoHypermarket.dat", "ab");
     if(p == NULL)
@@ -174,32 +164,30 @@ void ListadoHypermarket::modificarInventario(bool sumaOresta, int idProducto, in
     {
         while(fread(&producto, sizeof(Producto), 1, p) != 0)
         {
-
             if(producto.getTipoDeProducto() == tipoProducto && producto.getID() == idProducto)
             {
                 aux = producto.getCantidad();
                 aux += cant;
                 producto.setCantidad(aux);
+                fseek(p, pos * sizeof (Producto), 0);
+                fwrite(&producto, sizeof (Producto), 1, p);
             }
-
+            pos++;
         }
-
     }
     else /// Si el bool es falso, resta la cantidad de ese producto en la cantidad.
     {
         while(fread(&producto, sizeof(Producto), 1, p) != 0)
         {
-
             if(producto.getTipoDeProducto() == tipoProducto && producto.getID() == idProducto)
             {
                 aux = producto.getCantidad();
                 aux -= cant;
-                producto.setCantidad(aux);
+                fseek(p, pos * sizeof (Producto), 0);
+                fwrite(&producto, sizeof (Producto), 1, p);
             }
-
+            pos++;
         }
-
     }
-
     fclose(p);
 }
