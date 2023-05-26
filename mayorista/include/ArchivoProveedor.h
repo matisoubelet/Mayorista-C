@@ -1,21 +1,21 @@
-#ifndef LISTADOPROVEEDOR_H
-#define LISTADOPROVEEDOR_H
+#ifndef ARCHIVOPROVEEDOR_H
+#define ARCHIVOPROVEEDOR_H
+#include<iostream>
 #include "Producto.h"
+#include "Menu.h"
+using namespace std;
 
-class ListadoProveedor
+class ArchivoProveedor: public Menu
 {
     public:
         void listadoProductos(int);
         void cargarProducto();
-        float enseniarCompra(int idCompra);
+        float precioProducto(int idCompra);
+        void mostrarProducto();
         /// Esta Clase debe ser capaz de entrar al archivo donde se esten guardando los productos
         /// de los proovedores a la hora de querer comprar algo de ellos. Cada producto debera incluir
         /// Su Id, Nombre del producto, precio por unidad y precio por bulto
 
-    protected:
-        /// Se heredaria lo necesario para luego en una clase ListadoDeNuestroLocal
-    private:
-
 };
 
-#endif // LISTADOPROVEEDOR_H
+#endif // ARCHIVOPROVEEDOR_H

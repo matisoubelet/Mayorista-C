@@ -1,5 +1,10 @@
 #ifndef PRODUCTO_H
 #define PRODUCTO_H
+#include<iostream>
+#include <cstring>
+#include "funciones.h"
+
+using namespace std;
 
 class Producto {
 private:
@@ -26,8 +31,6 @@ public:
     int getID();
     int getTipoDeProducto();
     int getCantidad();
-
-
 
 
 };

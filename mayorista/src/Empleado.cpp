@@ -1,7 +1,5 @@
-#include<iostream>
 #include "Empleado.h"
-#include <cstring>
-using namespace std;
+
 
 
 ///DNI

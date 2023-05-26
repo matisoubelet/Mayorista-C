@@ -1,7 +1,12 @@
 #ifndef HYPERMARKET_H
 #define HYPERMARKET_H
+#include<iostream>
 #include "Menu.h"
-#include "ListadoHypermarket.h"
+#include "ArchivoHypermarket.h"
+#include "Hypermarket.h"
+#include "ArchivoProveedor.h"
+using namespace std;
+
 
 class Hypermarket : public Menu
 {
@@ -20,7 +25,7 @@ class Hypermarket : public Menu
 
     private:
 
-        float _fondos, _precioPorBulto = 1.25, _precioPorUnidad = 1.10;
+        float _fondos, _precioPorUnidad = 1.10;
         int _precioEntrega = 1500;
 };
 

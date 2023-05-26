@@ -1,8 +1,7 @@
-#include<iostream>
-#include "ListadoProveedor.h"
-using namespace std;
+#include "ArchivoProveedor.h"
 
-void ListadoProveedor::cargarProducto()
+
+void ArchivoProveedor::cargarProducto()
 {
     FILE *p;
     bool cargOtro = true;
@@ -10,7 +9,7 @@ void ListadoProveedor::cargarProducto()
     p = fopen("listadoProductos.dat", "ab");
     if(p == NULL)
     {
-        cout << "No se ha podido abrir el archivo." << endl;
+        cout << "No se ha podido abrir el archivo ListadoProductos." << endl;
         fclose(p);
         return;
     }
@@ -29,7 +28,7 @@ void ListadoProveedor::cargarProducto()
     fclose(p);
 }
 
-void ListadoProveedor::listadoProductos(int tipoDeProducto){
+void ArchivoProveedor::listadoProductos(int tipoDeProducto){
 
     Producto producto;
     FILE *p;
@@ -37,7 +36,7 @@ void ListadoProveedor::listadoProductos(int tipoDeProducto){
     p = fopen("listadoProductos.dat", "rb");
     if(p == NULL)
         {
-            cout << "No se ha podido abrir el archivo." << endl;
+            cout << "No se ha podido abrir el archivo ListadoProductos." << endl;
             fclose(p);
             return;
         }
@@ -53,7 +52,7 @@ void ListadoProveedor::listadoProductos(int tipoDeProducto){
     fclose(p);
 }
 
-float ListadoProveedor::enseniarCompra(int idCompra){
+float ArchivoProveedor::precioProducto(int idCompra){
 
     Producto producto;
     FILE *p;
@@ -61,7 +60,7 @@ float ListadoProveedor::enseniarCompra(int idCompra){
     p = fopen("listadoProductos.dat", "rb");
     if(p == NULL)
         {
-            cout << "No se ha podido abrir el archivo." << endl;
+            cout << "No se ha podido abrir el archivo ListadoProductos." << endl;
             fclose(p);
             return -1;
         }
@@ -70,8 +69,45 @@ float ListadoProveedor::enseniarCompra(int idCompra){
 
         if(idCompra == producto.getID()){
             producto.Mostrar();
+            fclose(p);
             return producto.getPrecio();
         }
     }
+
+    return -2;
 }
+
+void ArchivoProveedor::mostrarProducto()
+{
+    int tipoDeProducto;
+    char mostrarMas='0';
+
+    do
+    {
+        system("cls");
+        cout << "+=====================+" << endl;
+        cout << "| 1 - BEBIDA          |" << endl;
+        cout << "| 2 - ROPA            |"<< endl;
+        cout << "| 3 - COMIDA          |" << endl;
+        cout << "| 4 - ART. LIMPIEZA   |" << endl;
+        cout << "+=====================+" << endl;
+        cout << "Que tipo de producto esta buscando?: ";
+        cin >> opcion;
+        cout << endl << endl;
+
+        if(opcion>'0' && opcion<'5')
+        {
+            tipoDeProducto=isdigit(opcion);
+            listadoProductos(tipoDeProducto);
+            mostrarMas = '0';
+        }
+        else
+        {
+            OpcionNoValida();
+            mostrarMas ='1';
+        }
+    }
+    while(mostrarMas == '1');
+}
+
 

@@ -1,22 +1,17 @@
-#include<iostream>
-#include "ListadoHypermarket.h"
-using namespace std;
+#include "ArchivoHypermarket.h"
 
-void ListadoHypermarket::cargarProducto()
-{
+void ArchivoHypermarket::cargarProducto() {
     FILE *p;
     bool cargOtro = true;
 
     p = fopen("listadoHypermarket.dat", "ab");
-    if(p == NULL)
-    {
+    if(p == NULL) {
         cout << "No se ha podido abrir el archivo." << endl;
         fclose(p);
         return;
     }
 
-    while(cargOtro)
-    {
+    while(cargOtro) {
         Producto producto;
         producto.Cargar();
         cout << "========================" << endl;
@@ -30,42 +25,33 @@ void ListadoHypermarket::cargarProducto()
     fclose(p);
 }
 
-void ListadoHypermarket::listadoProductos(int tipoDeProducto = 0)
-{
+void ArchivoHypermarket::listadoProductos(int tipoDeProducto = 0) {
     Hypermarket local;
     Producto producto;
     FILE *p, *f;
 
     p = fopen("listadoHypermarket.dat", "rb");
-    if(p == NULL)
-    {
+    if(p == NULL) {
         cout << "No se ha podido abrir el archivo." << endl;
         fclose(p);
         return;
     }
 
     f = fopen("fondosHypermarket.dat", "rb");
-    if(f == NULL)
-    {
+    if(f == NULL) {
         cout << "No se ha podido abrir el archivo." << endl;
         fclose(f);
         return;
     }
 
-    if(tipoDeProducto == 0)
-    {
+    if(tipoDeProducto == 0) {
 
-        while(fread(&producto, sizeof(Producto), 1, p) != 0)
-        {
+        while(fread(&producto, sizeof(Producto), 1, p) != 0) {
             producto.Mostrar();
         }
-    }
-    else
-    {
-        while(fread(&producto, sizeof(Producto), 1, p) != 0)
-        {
-            if(producto.getTipoDeProducto() == tipoDeProducto)
-            {
+    } else {
+        while(fread(&producto, sizeof(Producto), 1, p) != 0) {
+            if(producto.getTipoDeProducto() == tipoDeProducto) {
                 producto.Mostrar();
             }
         }
@@ -79,34 +65,26 @@ void ListadoHypermarket::listadoProductos(int tipoDeProducto = 0)
     fclose(p);
 }
 
-void ListadoHypermarket::cargarFondos()
-{
+void ArchivoHypermarket::modificarFondos(float monto) {
 
     FILE *p;
-    Hypermarket fondosLocal;
-    float fondos;
 
-    p = fopen("fondosHypermarket.dat", "ab");
-    if(p == NULL)
-    {
-        cout << "No se ha podido abrir el archivo." << endl;
+    p = fopen("fondosHypermarket.dat", "rb+");
+    if(p == NULL) {
+        cout << "No se ha podido abrir el archivo fondosHypermarket." << endl;
         fclose(p);
         return;
     }
 
-    cout << "Fondos del local: ";
-    cin >> fondos;
-    cout << endl;
-    fondosLocal.setFondos(fondos);
-
-    fwrite(&fondosLocal, sizeof(Hypermarket), 1, p);
+    fseek(p, ftell(p)-sizeof(float),SEEK_SET);
+    fwrite(&monto, sizeof(float), 1, p);
     fclose(p);
 }
 
-void ListadoHypermarket::modificarFondos(float monto)
-{
+float ArchivoHypermarket::mostrarFondos() {
 
     FILE *p;
+<<<<<<< HEAD:mayorista/src/ListadoHypermarket.cpp
     Hypermarket local;
 
     p = fopen("fondosHypermarket.dat", "ab");
@@ -129,43 +107,54 @@ float ListadoHypermarket::mostrarFondos()
 
     FILE *p;
     Hypermarket local;
+=======
+    float fondos;
+>>>>>>> mayorista:mayorista/src/ArchivoHypermarket.cpp
 
     p = fopen("fondosHypermarket.dat", "rb");
-    if(p == NULL)
-    {
+    if(p == NULL) {
         cout << "No se ha podido abrir el archivo." << endl;
         fclose(p);
         return -1;
     }
 
+<<<<<<< HEAD:mayorista/src/ListadoHypermarket.cpp
     while(fread(&local, sizeof (Hypermarket), 1, p) != 0)
     {
         return local.getFondos();
     }
+=======
+    fread(&fondos, sizeof (float), 1, p);
+>>>>>>> mayorista:mayorista/src/ArchivoHypermarket.cpp
     fclose(p);
+    return fondos;
 }
 
-void ListadoHypermarket::modificarInventario(bool sumaOresta, int idProducto, int tipoProducto, int cant)
-{
+void ArchivoHypermarket::modificarInventario(bool sumaOresta, int idProducto, int tipoProducto, int cant) {
 
     Producto producto;
     FILE *p;
     int aux, pos = 0;
 
     p = fopen("listadoHypermarket.dat", "ab");
-    if(p == NULL)
-    {
+    if(p == NULL) {
         cout << "No se ha podido abrir el archivo." << endl;
         fclose(p);
         return;
     }
 
+<<<<<<< HEAD:mayorista/src/ListadoHypermarket.cpp
     if(sumaOresta == true) /// Si es Bool es verdadero, suma la cantidad de ese producto en la cantidad
     {
         while(fread(&producto, sizeof(Producto), 1, p) != 0)
         {
             if(producto.getTipoDeProducto() == tipoProducto && producto.getID() == idProducto)
             {
+=======
+    if(sumaOresta == true) { /// Si es Bool es verdadero, suma la cantidad de ese producto en la cantidad
+        while(fread(&producto, sizeof(Producto), 1, p) != 0) {
+            if(producto.getTipoDeProducto() == tipoProducto && producto.getID() == idProducto) {
+>>>>>>> mayorista:mayorista/src/ArchivoHypermarket.cpp
                 aux = producto.getCantidad();
                 aux += cant;
                 producto.setCantidad(aux);
@@ -174,6 +163,7 @@ void ListadoHypermarket::modificarInventario(bool sumaOresta, int idProducto, in
             }
             pos++;
         }
+<<<<<<< HEAD:mayorista/src/ListadoHypermarket.cpp
     }
     else /// Si el bool es falso, resta la cantidad de ese producto en la cantidad.
     {
@@ -181,6 +171,11 @@ void ListadoHypermarket::modificarInventario(bool sumaOresta, int idProducto, in
         {
             if(producto.getTipoDeProducto() == tipoProducto && producto.getID() == idProducto)
             {
+=======
+    } else { /// Si el bool es falso, resta la cantidad de ese producto en la cantidad.
+        while(fread(&producto, sizeof(Producto), 1, p) != 0) {
+            if(producto.getTipoDeProducto() == tipoProducto && producto.getID() == idProducto) {
+>>>>>>> mayorista:mayorista/src/ArchivoHypermarket.cpp
                 aux = producto.getCantidad();
                 aux -= cant;
                 fseek(p, pos * sizeof (Producto), 0);

@@ -1,10 +1,9 @@
 #include <iostream>
 #include "Hypermarket.h"
 #include "Producto.h"
-#include "ListadoProveedor.h"
-#include "Proveedor.h"
-#include "ListadoHypermarket.h"
-#include "MenuABM.h"
+#include "ArchivoProveedor.h"
+#include "ArchivoHypermarket.h"
+#include "ArchivoEmpleados.h"
 using namespace std;
 
 int main()
@@ -13,6 +12,8 @@ int main()
     //menu.CargarMenuAdmin();
 
     Hypermarket local;
+    ArchivoHypermarket localarchivo;
+    localarchivo.modificarFondos(2000);
     local.menu();
 
     //ListadoHypermarket listado;

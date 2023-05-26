@@ -1,8 +1,10 @@
 #ifndef MENU_H
 #define MENU_H
-#include <thread>
+#include <iostream>
+#include <stdlib.h>
+//#include <thread>
 using namespace std;
-using namespace this_thread;
+//using namespace this_thread;
 
 
 class Menu {
