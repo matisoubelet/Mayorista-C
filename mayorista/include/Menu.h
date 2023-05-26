@@ -2,9 +2,9 @@
 #define MENU_H
 #include <iostream>
 #include <stdlib.h>
-#include <thread>
+//#include <thread>
 using namespace std;
-using namespace this_thread;
+//using namespace this_thread;
 
 
 class Menu {

@@ -1,9 +1,5 @@
-#include<iostream>
-#include <cstring>
 #include "Producto.h"
-#include "funciones.h"
 
-using namespace std;
 
 void Producto::Cargar() {
 
