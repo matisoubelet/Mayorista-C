@@ -26,7 +26,6 @@ void ArchivoHypermarket::cargarProducto() {
 }
 
 void ArchivoHypermarket::listadoProductos(int tipoDeProducto = 0) {
-    Hypermarket local;
     Producto producto;
     FILE *p, *f;
 
@@ -34,13 +33,6 @@ void ArchivoHypermarket::listadoProductos(int tipoDeProducto = 0) {
     if(p == NULL) {
         cout << "No se ha podido abrir el archivo." << endl;
         fclose(p);
-        return;
-    }
-
-    f = fopen("fondosHypermarket.dat", "rb");
-    if(f == NULL) {
-        cout << "No se ha podido abrir el archivo." << endl;
-        fclose(f);
         return;
     }
 
@@ -57,11 +49,10 @@ void ArchivoHypermarket::listadoProductos(int tipoDeProducto = 0) {
         }
     }
 
-    fread(&local, sizeof(Hypermarket), 1, f);
-    cout << "Fondos: " << local.getFondos() << endl;
+
+    cout << "Fondos: " << mostrarFondos() << endl;
     system("pause");
 
-    fclose(f);
     fclose(p);
 }
 

@@ -1,15 +1,8 @@
 #include "Hypermarket.h"
 
 
-void Hypermarket::setFondos(float fondos) {
-    _fondos = fondos;
-}
-
-float Hypermarket::getFondos() {
-    return _fondos;
-}
-
 void Hypermarket::menu() {
+ArchivoEmpleados empleados;
     do {
         system("cls");
         cout << "+=====================+" << endl;
@@ -19,6 +12,7 @@ void Hypermarket::menu() {
         cout << "| 3 - PAGOS           |" << endl;
         cout << "| 4 - INVENTARIO      |" << endl;
         cout << "| 5 - CIERRE Z        |" << endl;
+        cout << "| 6 - EMPLEADOS       |" << endl;
         cout << "| 0 - SALIR           |" << endl;
         cout << "+=====================+" << endl;
 
@@ -26,7 +20,7 @@ void Hypermarket::menu() {
         cin >> opcion;
         cout << endl;
 
-        while(opcion < '0' || opcion > '5') {
+        while(opcion < '0' || opcion > '6') {
             OpcionNoValida();
             cin >> opcion;
             cout << endl;
@@ -49,8 +43,14 @@ void Hypermarket::menu() {
             /// Hypermarket::cierreZ();
             break;
 
+        case '6':
+            system("cls");
+            empleados.MenuAdmin();
+        break;
+
+
         case '0':
-            return;
+        return;
         }
 
     } while(opcion != '0');
