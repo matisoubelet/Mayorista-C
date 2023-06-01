@@ -15,10 +15,10 @@ class Hypermarket : public Menu
     public:
 
         void menu();
-        void comprar();
-        void vender();
+        bool comprar();
+        bool vender();
         void pagos();
-        void inventario();
+        int inventario();
 
         void setFondos(float fondos);
         float getFondos();

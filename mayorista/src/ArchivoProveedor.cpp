@@ -52,7 +52,7 @@ void ArchivoProveedor::listadoProductos(int tipoDeProducto){
     fclose(p);
 }
 
-float ArchivoProveedor::precioProducto(int idCompra){
+float ArchivoProveedor::precioProducto(int idCompra, int tipoProd){
 
     Producto producto;
     FILE *p;
@@ -66,18 +66,18 @@ float ArchivoProveedor::precioProducto(int idCompra){
         }
 
     while(fread(&producto, sizeof(Producto), 1, p) != 0){
-
+        if(producto.getTipoDeProducto()==tipoProd){
         if(idCompra == producto.getID()){
             producto.Mostrar();
             fclose(p);
             return producto.getPrecio();
-        }
+        }}
     }
 
     return -2;
 }
 
-void ArchivoProveedor::mostrarProducto()
+int ArchivoProveedor::mostrarProducto()
 {
     int tipoDeProducto;
     char mostrarMas='0';
@@ -108,6 +108,7 @@ void ArchivoProveedor::mostrarProducto()
         }
     }
     while(mostrarMas == '1');
+    return tipoDeProducto;
 }
 
 

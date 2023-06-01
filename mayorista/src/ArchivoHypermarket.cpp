@@ -25,21 +25,21 @@ void ArchivoHypermarket::cargarProducto() {
     fclose(p);
 }
 
-void ArchivoHypermarket::listadoProductos(int tipoDeProducto = 0) {
+void ArchivoHypermarket::listadoProductos(int tipoDeProducto ) {
     Producto producto;
-    FILE *p, *f;
+    FILE *p;
 
     p = fopen("listadoHypermarket.dat", "rb");
     if(p == NULL) {
         cout << "No se ha podido abrir el archivo." << endl;
         fclose(p);
-        return;
+        return ;
     }
 
-    if(tipoDeProducto == 0) {
-
+    if(tipoDeProducto==0) {
         while(fread(&producto, sizeof(Producto), 1, p) != 0) {
             producto.Mostrar();
+            cout<<"------------"<<endl;
         }
     } else {
         while(fread(&producto, sizeof(Producto), 1, p) != 0) {
@@ -54,6 +54,7 @@ void ArchivoHypermarket::listadoProductos(int tipoDeProducto = 0) {
     system("pause");
 
     fclose(p);
+    return ;
 }
 
 void ArchivoHypermarket::modificarFondos(float monto) {
@@ -89,40 +90,90 @@ float ArchivoHypermarket::mostrarFondos() {
     return fondos;
 }
 
-void ArchivoHypermarket::modificarInventario(bool sumaOresta, int idProducto, int tipoProducto, int cant) {
+void ArchivoHypermarket::modificarInventario(bool aumentar, int idProducto, int tipoProducto, int cant) {
 
     Producto producto;
     FILE *p;
-    int aux, pos = 0;
+    int aux;
 
-    p = fopen("listadoHypermarket.dat", "ab");
+    p = fopen("listadoHypermarket.dat", "rb+");
     if(p == NULL) {
         cout << "No se ha podido abrir el archivo." << endl;
         fclose(p);
         return;
     }
 
-    if(sumaOresta == true) { /// Si es Bool es verdadero, suma la cantidad de ese producto en la cantidad
-        while(fread(&producto, sizeof(Producto), 1, p) != 0) {
-            if(producto.getTipoDeProducto() == tipoProducto && producto.getID() == idProducto) {
-                aux = producto.getCantidad();
+    while(fread(&producto, sizeof(Producto), 1, p) != 0) {
+        if(producto.getTipoDeProducto() == tipoProducto && producto.getID() == idProducto) {
+            aux = producto.getCantidad();
+
+            producto.setCantidad(aux);
+
+
+            if(aumentar == true) { /// Si es Bool es verdadero, suma la cantidad de ese producto en la cantidad
                 aux += cant;
-                producto.setCantidad(aux);
-                fseek(p, pos * sizeof (Producto), 0);
-                fwrite(&producto, sizeof (Producto), 1, p);
-            }
-            pos++;
-        }
-    } else { /// Si el bool es falso, resta la cantidad de ese producto en la cantidad.
-        while(fread(&producto, sizeof(Producto), 1, p) != 0) {
-            if(producto.getTipoDeProducto() == tipoProducto && producto.getID() == idProducto) {
-                aux = producto.getCantidad();
+            } else {                 /// Si el bool es falso, resta la cantidad de ese producto en la cantidad.
                 aux -= cant;
-                fseek(p, pos * sizeof (Producto), 0);
-                fwrite(&producto, sizeof (Producto), 1, p);
             }
-            pos++;
+
+            fseek(p, ftell(p)-sizeof(Producto),SEEK_SET);
+            fwrite(&producto, sizeof (Producto), 1, p);
+        }
+    }
+
+    fclose(p);
+}
+
+
+float ArchivoHypermarket::precioProducto(int idCompra, int tipoProd) {
+
+    Producto producto;
+    FILE *p;
+
+    p = fopen("listadoHypermarket.dat", "rb");
+    if(p == NULL) {
+        cout << "No se ha podido abrir el archivo listadoHypermarket." << endl;
+        fclose(p);
+        return -1;
+    }
+
+    while(fread(&producto, sizeof(Producto), 1, p) != 0) {
+        if(producto.getTipoDeProducto()==tipoProd) {
+            if(idCompra == producto.getID()) {
+                producto.Mostrar();
+                fclose(p);
+                return producto.getPrecio();
+            }
         }
     }
     fclose(p);
+    return -2;
+}
+
+
+int ArchivoHypermarket::stock(int idCompra, int tipoProd) {
+
+
+    Producto producto;
+    FILE *p;
+
+    p = fopen("listadoHypermarket.dat", "rb");
+    if(p == NULL) {
+        cout << "No se ha podido abrir el archivo listadoHypermarket." << endl;
+        fclose(p);
+        return -1;
+    }
+
+    while(fread(&producto, sizeof(Producto), 1, p) != 0) {
+        if(producto.getTipoDeProducto()==tipoProd) {
+            if(idCompra == producto.getID()) {
+                producto.Mostrar();
+                fclose(p);
+                return producto.getCantidad();
+            }
+        }
+    }
+
+    fclose(p);
+    return -2;
 }
