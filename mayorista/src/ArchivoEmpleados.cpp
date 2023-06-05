@@ -1,22 +1,22 @@
 #include "ArchivoEmpleados.h"
 
 
-void ArchivoEmpleados::CargarMenuAdmin()
+void ArchivoEmpleados::MenuAdmin()
 {
 
     do
     {
-        cout << "+===================+" << endl;
-        cout << "|     -AMB DE EMPLEADOS-" << endl;
-        cout << "| 1 - ALTA" << endl;
-        cout << "| 2 - BAJA" << endl;
-        cout << "| 3 - MODIFICAR" << endl;
-        cout << "| 4 - LISTAR VINCULADOS" << endl;
-        cout << "| 5 - LISTAR DESVINCULADOS" << endl;
-        cout << "| 6 - LISTAR PERMISOS" << endl;
-        cout << "|                  " << endl;
-        cout << "| 0 - SALIR" << endl;
-        cout << "+===================+" << endl;
+        cout << "+============================+" << endl;
+        cout << "|     -MENU DE EMPLEADOS-    |" << endl;
+        cout << "| 1 - ALTA                   |" << endl;
+        cout << "| 2 - BAJA                   |" << endl;
+        cout << "| 3 - MODIFICAR              |" << endl;
+        cout << "| 4 - LISTAR VINCULADOS      |" << endl;
+        cout << "| 5 - LISTAR DESVINCULADOS   |" << endl;
+        cout << "| 6 - LISTAR PERMISOS        |" << endl;
+        cout << "|                            |" << endl;
+        cout << "| 0 - SALIR                  |" << endl;
+        cout << "+============================+" << endl;
 
         cout << "QUE OPCION DESEA SELECCIONAR: ";
         cin >> opcion;

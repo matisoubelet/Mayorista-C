@@ -10,9 +10,10 @@ class ArchivoHypermarket
     public:
 
         void listadoProductos(int);
+        int stock(int idCompra, int tipoProducto);
         void cargarProducto();
         void modificarInventario(bool sumaOresta, int idProducto, int tipoProducto, int cant);
-
+        float precioProducto(int idCompra, int tipoProducto);
         void modificarFondos(float monto);
         float mostrarFondos();
 

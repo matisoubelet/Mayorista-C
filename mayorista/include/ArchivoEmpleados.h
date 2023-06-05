@@ -9,7 +9,7 @@ using namespace std;
 
 class ArchivoEmpleados:public Menu {
 public:
-    void CargarMenuAdmin();
+    void MenuAdmin();
     void AltaEmpleado();
     int BuscarEmpleado(int dni);
     int BajaEmpleado(int legajo);
