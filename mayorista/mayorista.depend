@@ -192,89 +192,7 @@
 	<stdlib.h>
 	"Menu.h"
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-1685043627 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\mayoristacopia\main.cpp
-	<iostream>
-	"Hypermarket.h"
-	"Producto.h"
-	"ListadoProveedor.h"
-	"Proveedor.h"
-	"ListadoHypermarket.h"
-	"MenuABM.h"
-
-1684975750 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\mayoristacopia\include\hypermarket.h
-	"Menu.h"
-	"ListadoHypermarket.h"
-
-1684785519 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\mayoristacopia\include\menu.h
-	<thread>
-
-1684976081 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\mayoristacopia\include\listadohypermarket.h
-	"Producto.h"
-	"Hypermarket.h"
-
-1684791527 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\mayoristacopia\include\producto.h
-
-1684794046 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\mayoristacopia\include\listadoproveedor.h
-	"Producto.h"
-
-1685043225 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\mayoristacopia\include\proveedor.h
-	"ListadoProveedor.h"
-	"ListadoHypermarket.h"
-	"Menu.h"
-
-1684787414 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\mayoristacopia\menuabm.h
-
-1684787299 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\mayoristacopia\src\empleado.cpp
-	<iostream>
-	"Empleado.h"
-	<cstring>
-
-1684786975 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\mayoristacopia\include\empleado.h
-
-1685043239 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\mayoristacopia\src\hypermarket.cpp
-	<iostream>
-	"Hypermarket.h"
-	"Proveedor.h"
-
-1685043570 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\mayoristacopia\src\listadohypermarket.cpp
-	<iostream>
-	"ListadoHypermarket.h"
-
-1684794068 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\mayoristacopia\src\listadoproveedor.cpp
-	<iostream>
-	"ListadoProveedor.h"
-
-1684785519 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\mayoristacopia\src\menu.cpp
-	<iostream>
-	<stdlib.h>
-	"Menu.h"
-
-1684790266 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\mayoristacopia\src\menuabm.cpp
-	<iostream>
-	"Hypermarket.h"
-	"MenuABM.h"
-	<cstring>
-	<cstdlib>
-	"Empleado.h"
-
-1684791527 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\mayoristacopia\src\producto.cpp
-	<iostream>
-	<cstring>
-	"Producto.h"
-	"funciones.h"
-
-1684017104 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\mayoristacopia\include\funciones.h
-
-1685043225 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\mayoristacopia\src\proveedor.cpp
-	<iostream>
-	"Proveedor.h"
-=======
-1685058621 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\archivohypermarket.h
-=======
 1685597783 c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\include\archivohypermarket.h
->>>>>>> mayorista
 	<iostream>
 	"Producto.h"
 	"Hypermarket.h"
@@ -299,5 +217,4 @@
 
 1685597921 source:c:\users\enzo1\desktop\tercer catrimestre\mayorista-c\mayorista\src\archivohypermarket.cpp
 	"ArchivoHypermarket.h"
->>>>>>> mayorista
 

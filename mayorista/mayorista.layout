@@ -2,36 +2,7 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-	<File name="include\Producto.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="155" topLine="3" />
-		</Cursor>
-	</File>
-	<File name="src\Menu.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="182" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\ListadoHypermarket.cpp" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1709" topLine="57" />
-		</Cursor>
-	</File>
-	<File name="src\ListadoProveedor.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1583" topLine="51" />
-		</Cursor>
-	</File>
-	<File name="include\Hypermarket.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="411" topLine="0" />
-=======
-	<File name="include\Hypermarket.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="11" zoom_2="0">
-=======
 	<File name="src\Hypermarket.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
->>>>>>> mayorista
 		<Cursor>
 			<Cursor1 position="1218" topLine="141" />
 		</Cursor>
@@ -43,69 +14,10 @@
 	</File>
 	<File name="include\ArchivoEmpleados.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="12" zoom_2="0">
 		<Cursor>
-<<<<<<< HEAD
-			<Cursor1 position="2749" topLine="9" />
->>>>>>> mayorista
-=======
 			<Cursor1 position="264" topLine="0" />
->>>>>>> mayorista
 		</Cursor>
 	</File>
-<<<<<<< HEAD
-<<<<<<< HEAD
-	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="314" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\Proveedor.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="181" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\Empleado.h" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="252" topLine="3" />
-		</Cursor>
-	</File>
-	<File name="src\MenuABM.cpp" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3654" topLine="146" />
-		</Cursor>
-	</File>
-	<File name="include\ListadoProveedor.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="203" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Proveedor.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="127" topLine="3" />
-		</Cursor>
-	</File>
-	<File name="include\ListadoHypermarket.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="394" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Hypermarket.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1591" topLine="136" />
-		</Cursor>
-	</File>
-	<File name="include\Menu.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="101" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Producto.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="140" topLine="24" />
-=======
-	<File name="include\ListadoProveedor.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="12" zoom_2="0">
-=======
 	<File name="src\Empleado.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
->>>>>>> mayorista
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
@@ -161,12 +73,7 @@
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="11" zoom_2="0">
 		<Cursor>
-<<<<<<< HEAD
-			<Cursor1 position="392" topLine="0" />
->>>>>>> mayorista
-=======
 			<Cursor1 position="352" topLine="0" />
->>>>>>> mayorista
 		</Cursor>
 	</File>
 	<File name="src\ArchivoHypermarket.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
@@ -174,21 +81,9 @@
 			<Cursor1 position="4605" topLine="149" />
 		</Cursor>
 	</File>
-<<<<<<< HEAD
-<<<<<<< HEAD
-	<File name="src\Empleado.cpp" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1470" topLine="95" />
-=======
-	<File name="src\Producto.cpp" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="9" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
->>>>>>> mayorista
-=======
 	<File name="include\Menu.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="9" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="180" topLine="0" />
->>>>>>> mayorista
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

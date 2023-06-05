@@ -1,26 +1,9 @@
 #include "Hypermarket.h"
 
-<<<<<<< HEAD
-void Hypermarket::setFondos(float fondos)
-{
-    _fondos = fondos;
-}
-
-float Hypermarket::getFondos()
-{
-    return _fondos;
-}
-
-void Hypermarket::menu()
-{
-    do
-    {
-=======
 
 void Hypermarket::menu() {
     ArchivoEmpleados empleados;
     do {
->>>>>>> mayorista
         system("cls");
         cout << "+=====================+" << endl;
         cout << "|-----HYPERMARKET-----|" << endl;
@@ -36,23 +19,13 @@ void Hypermarket::menu() {
         cin >> opcion;
         cout << endl;
 
-<<<<<<< HEAD
-        while(opcion < '0' || opcion > '5')
-        {
-=======
         while(opcion < '0' || opcion > '5') {
->>>>>>> mayorista
             OpcionNoValida();
             cin >> opcion;
             cout << endl;
         }
 
-<<<<<<< HEAD
-        switch(opcion)
-        {
-=======
         switch(opcion) {
->>>>>>> mayorista
         case '1':
             while(Hypermarket::comprar());
             break;
@@ -70,94 +43,6 @@ void Hypermarket::menu() {
         case '5':
             empleados.MenuAdmin();
             break;
-<<<<<<< HEAD
-        }
-    }
-    while(opcion != '0');
-}
-
-void Hypermarket::comprar()
-{
-    float fondos, precio;
-    int idCompra, UoB, cantCompra;
-    char mostrarMas = '0';
-    Proveedor proveedor;
-    ListadoProveedor listado;
-    ListadoHypermarket local;
-
-    proveedor.mostrar();
-
-    cout << "Ingrese el ID del producto que desee comprar: ";
-    cin >> idCompra;
-    cout << endl;
-
-    while(idCompra < 1 || idCompra > 10)
-    {
-        cout << "Ese ID no es valido, asegurese que se encuentre entre el 1 y el 10" << endl;
-        cout << "Vuelva a ingresar el ID por favor: ";
-        cin >> idCompra;
-        cout << endl;
-    }
-
-    precio = listado.enseniarCompra(idCompra);
-    fondos = local.mostrarFondos();
-    cout << "FONDOS: " << fondos << endl;
-
-    cout << "Desea comprar en unidades o en bultos (10 unidades): (Unidades: 1 | Bultos: 2): ";
-    cin >> UoB;
-    cout << endl;
-
-    switch(UoB)
-    {
-    case 1:
-        cout << "Cuantas unidades desea comprar?: ";
-        cin >> cantCompra;
-        cout << endl;
-        precio *= cantCompra;
-        break;
-    case 2:
-        cout << "Cuantos bultos desea comprar?: ";
-        cin >> cantCompra;
-        cout << endl;
-        cantCompra *= 10;
-        precio *= cantCompra;
-        break;
-    default:
-        cout << "Opcion inexistente, la compra sera cancelada." << endl;
-        break;
-    }
-
-    if(fondos-precio < 0)
-    {
-        cout << "La compra no puede realizarse por falta de fondos" << endl;
-    }
-    else
-    {
-        fondos -= precio;
-        local.modificarFondos(fondos);
-        local.modificarInventario(true, idCompra, opcion, cantCompra);
-        cout << "Compra realizada!" << endl;
-    }
-
-    precio = 0;
-    cantCompra = 0;
-
-    cout << "Quiere ver mas productos? (Si = 1 | No = 0): ";
-    cin >> mostrarMas,
-        cout << endl;
-
-    if(mostrarMas == '1')
-    {
-        proveedor.mostrar();
-    }
-}
-
-void Hypermarket::inventario()
-{
-    int tipoProducto;
-    ListadoHypermarket local;
-
-=======
 
 
         case '0':
@@ -258,7 +143,6 @@ int Hypermarket::inventario() {
     int tipoProducto;
     ArchivoHypermarket archivoDelLocal;
 
->>>>>>> mayorista
     system("cls");
     cout << "+=====================+" << endl;
     cout << "| 1 - BEBIDA          |" << endl;
@@ -279,15 +163,8 @@ int Hypermarket::inventario() {
     }
 
     cout << endl << endl;
-<<<<<<< HEAD
-    local.listadoProductos(tipoProducto);
-=======
     archivoDelLocal.listadoProductos(tipoProducto);
-<<<<<<< HEAD
->>>>>>> mayorista
-=======
     return tipoProducto;
->>>>>>> mayorista
 }
 
 bool Hypermarket::vender() {
