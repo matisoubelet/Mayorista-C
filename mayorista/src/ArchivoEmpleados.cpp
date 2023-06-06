@@ -4,8 +4,11 @@
 void ArchivoEmpleados::MenuAdmin()
 {
 
+    int opcionMenu;
+
     do
     {
+        system("cls");
         cout << "+============================+" << endl;
         cout << "|     -MENU DE EMPLEADOS-    |" << endl;
         cout << "| 1 - ALTA                   |" << endl;
@@ -19,19 +22,19 @@ void ArchivoEmpleados::MenuAdmin()
         cout << "+============================+" << endl;
 
         cout << "QUE OPCION DESEA SELECCIONAR: ";
-        cin >> opcion;
+        cin >> opcionMenu;
         cout << endl;
 
-        while(opcion < '0' || opcion > '6')
+        while(opcionMenu < 0 || opcionMenu > 6)
         {
 
             OpcionNoValida();
-            cin >> opcion;
+            cin >> opcionMenu;
             cout << endl;
 
         }
 
-        switch(opcion)
+        switch(opcionMenu)
         {
 
         case '1':
@@ -66,8 +69,8 @@ void ArchivoEmpleados::MenuAdmin()
         }
 
     }
-    while(opcion != 0);
-
+    while(opcionMenu != 0);
+    system("cls");
 }
 
 void ArchivoEmpleados::AltaEmpleado()

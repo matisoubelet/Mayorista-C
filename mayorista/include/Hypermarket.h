@@ -19,7 +19,8 @@ class Hypermarket : public Menu
         bool vender();
         void pagos();
         int inventario();
-        float cierreZ(bool mostrarOSumar, float venta = 0);
+        void cierreZ(bool mostrarOSumar, float venta = 0);
+        void menuCierreZ();
 
         void setFondos(float fondos);
         float getVentasTotales();

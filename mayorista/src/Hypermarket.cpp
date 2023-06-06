@@ -1,9 +1,11 @@
 #include "Hypermarket.h"
 
 
-void Hypermarket::menu() {
+void Hypermarket::menu()
+{
     ArchivoEmpleados empleados;
-    do {
+    do
+    {
         system("cls");
         cout << "+=====================+" << endl;
         cout << "|-----HYPERMARKET-----|" << endl;
@@ -12,20 +14,23 @@ void Hypermarket::menu() {
         cout << "| 3 - PAGOS           |" << endl;
         cout << "| 4 - CIERRE Z        |" << endl;
         cout << "| 5 - EMPLEADOS       |" << endl;
+        cout << "|                     |" << endl;
         cout << "| 0 - SALIR           |" << endl;
         cout << "+=====================+" << endl;
 
-        cout << "QUE OPCION DESEA SELECCIONAR: "<< endl;
+        cout << "QUE OPCION DESEA SELECCIONAR: ";
         cin >> opcion;
         cout << endl;
 
-        while(opcion < '0' || opcion > '5') {
+        while(opcion < '0' || opcion > '5')
+        {
             OpcionNoValida();
             cin >> opcion;
             cout << endl;
         }
 
-        switch(opcion) {
+        switch(opcion)
+        {
         case '1':
             while(Hypermarket::comprar());
             break;
@@ -37,7 +42,7 @@ void Hypermarket::menu() {
             break;
 
         case '4':
-            Hypermarket::cierreZ(false);
+            Hypermarket::menuCierreZ();
             break;
 
         case '5':
@@ -49,10 +54,12 @@ void Hypermarket::menu() {
             return;
         }
 
-    } while(opcion != '0');
+    }
+    while(opcion != '0');
 }
 
-bool Hypermarket::comprar() {
+bool Hypermarket::comprar()
+{
 
     int idCompra, cantCompra, tipoProd;
     char UoB;
@@ -73,7 +80,8 @@ bool Hypermarket::comprar() {
     float precio = proveedor.precioProducto(idCompra, tipoProd);
 
 
-    while (cin.fail() || idCompra<1 || idCompra>10) {
+    while (cin.fail() || idCompra<1 || idCompra>10)
+    {
         cin.clear(); // Restablecer el estado de error
         cin.ignore(); // Ignorar el resto de la linea
         OpcionNoValida();
@@ -86,8 +94,10 @@ bool Hypermarket::comprar() {
     cout << "Desea comprar en unidades o en bultos (10 unidades): (Unidades: U | Bultos: B): "<< endl;
     cin >> UoB;
     cout << endl;
-    do {
-        switch(UoB) {
+    do
+    {
+        switch(UoB)
+        {
         case 'u':
         case 'U':
             cout << "Cuantas unidades desea comprar?: "<< endl;
@@ -115,12 +125,16 @@ bool Hypermarket::comprar() {
             break;
         }
 
-    } while (bucle!=0);
+    }
+    while (bucle!=0);
 
     cout<<"Total de Compra : "<<precio<<endl;
-    if(fondos-precio < 0) {
+    if(fondos-precio < 0)
+    {
         cout << "La compra no puede realizarse por falta de fondos" << endl;
-    } else {
+    }
+    else
+    {
         fondos -= precio;
         archivoDelLocal.modificarFondos(fondos);
         archivoDelLocal.modificarInventario(true, idCompra, tipoProd, cantCompra);
@@ -132,14 +146,18 @@ bool Hypermarket::comprar() {
 
     cout << "Quiere hacer otra compra? (Si = 1 | No = 0): "<< endl;
     cin >> continuar;
-    if(continuar) {
+    if(continuar)
+    {
         return true;
-    } else {
+    }
+    else
+    {
         return false;
     }
 }
 
-int Hypermarket::inventario() {
+int Hypermarket::inventario()
+{
     int tipoProducto;
     ArchivoHypermarket archivoDelLocal;
 
@@ -154,7 +172,8 @@ int Hypermarket::inventario() {
     cout << "Que tipo de producto esta buscando?: ";
     cin >> tipoProducto;
 
-    while (cin.fail() || tipoProducto<0 || tipoProducto>4) {
+    while (cin.fail() || tipoProducto<0 || tipoProducto>4)
+    {
         cin.clear(); // Restablecer el estado de error
         cin.ignore(); // Ignorar el resto de la linea
         OpcionNoValida();
@@ -167,7 +186,8 @@ int Hypermarket::inventario() {
     return tipoProducto;
 }
 
-bool Hypermarket::vender() {
+bool Hypermarket::vender()
+{
     ArchivoHypermarket archivoDelLocal;
 
     float fondos = archivoDelLocal.mostrarFondos();
@@ -183,7 +203,8 @@ bool Hypermarket::vender() {
     cin >> idCompra;
     cout << endl;
 
-    while (cin.fail() || idCompra<1 || idCompra>10) {
+    while (cin.fail() || idCompra<1 || idCompra>10)
+    {
         cin.clear(); // Restablecer el estado de error
         cin.ignore(); // Ignorar el resto de la linea
         OpcionNoValida();
@@ -200,10 +221,13 @@ bool Hypermarket::vender() {
     cin >> cantCompra;
     cout << endl;
 
-    if(cantCompra>archivoDelLocal.stock(tipoProd, idCompra)) {
+    if(cantCompra>archivoDelLocal.stock(tipoProd, idCompra))
+    {
         cout<<"la venta no se pudo realizar por falta de stock"<<endl;
         return false;
-    } else {
+    }
+    else
+    {
         precio *= cantCompra;
         cout<<"Total : "<<precio<<endl;
         cout<<"venta realizada con exito"<<endl;
@@ -221,26 +245,86 @@ bool Hypermarket::vender() {
     cout << "Desea hacer otra venta? (Si = 1 | No = 0): "<< endl;
     cin>>continuar;
 
-    if(continuar) {
+    if(continuar)
+    {
         return true;
-    } else {
+    }
+    else
+    {
         return false;
     }
 }
 
-float Hypermarket::getVentasTotales(){
+float Hypermarket::getVentasTotales()
+{
     return _ventasTotales;
 }
 
-void Hypermarket::setVentasTotales(float venta){
+void Hypermarket::setVentasTotales(float venta)
+{
     _ventasTotales = venta;
 }
 
-float Hypermarket::cierreZ(bool muestroOSumo, float venta){ // Si el bool es falso, enseña el total, si es verdadero suma al total el valor de la ultima venta
+void Hypermarket::cierreZ(bool muestroOSumo, float venta)  // Si el bool es falso, enseña el total, si es verdadero suma al total el valor de la ultima venta
+{
 
-    if(muestroOSumo == false){
-       cout << Hypermarket::getVentasTotales() << endl;
-    }else{
+    if(muestroOSumo == false)
+    {
+        cout << "Total recaudado el dia de hoy: " << Hypermarket::getVentasTotales() << endl;
+    }
+    else
+    {
         Hypermarket::setVentasTotales(Hypermarket::getVentasTotales() + venta);
     }
+}
+
+void Hypermarket::menuCierreZ()
+{
+    int opcionMenu;
+    do
+    {
+        system("cls");
+        cout << "+=====================+" << endl;
+        cout << "| -----CIERRE Z-----  |" << endl;
+        cout << "| 1 - ULTIMO CIERRE   |" << endl;
+        cout << "| 2 - ULTIMA SEMANA   |" << endl;
+        cout << "| 3 - BUSCAR CIERRE Z |" << endl;
+        cout << "| 4 - HACER CIERRE Z  |" << endl;
+        cout << "|                     |" << endl;
+        cout << "| 0 - ATRAS           |" << endl;
+        cout << "+=====================+" << endl;
+
+        cout << "QUE OPCION DESEA SELECCIONAR: ";
+        cin >> opcionMenu;
+
+        while (opcionMenu < 0 || opcionMenu > 4)
+        {
+            OpcionNoValida();
+            cin >> opcionMenu;
+            cout << endl;
+        }
+
+        switch(opcionMenu)
+        {
+
+        case 1:
+            // Entra al archivo de cierresZ, encuentra el ultimo añadido con el fseek y lo enseña
+            break;
+
+        case 2:
+            // Lo mismo que el anterior, pero al hacer el fseek, retrocede 7 registros y luego los enseña
+            break;
+
+        case 3:
+            //Busca por fecha (de ser existente) el cierre z deseado
+            break;
+
+        case 4:
+            // Finalizaria el dia actual, y cargaria en el archivo de cierresZ un nuevo registro con la fecha actual y la cantidad de dinero recaudado.
+            // Luego de eso aumentaria el dia actual en 1 y haria un setVentasTotales() en 0
+            break;
+        }
+    }
+    while(opcionMenu != 0);
+
 }
