@@ -37,7 +37,7 @@ void Hypermarket::menu() {
             break;
 
         case '4':
-            /// Hypermarket::cierreZ();
+            Hypermarket::cierreZ(false);
             break;
 
         case '5':
@@ -207,6 +207,7 @@ bool Hypermarket::vender() {
         precio *= cantCompra;
         cout<<"Total : "<<precio<<endl;
         cout<<"venta realizada con exito"<<endl;
+        Hypermarket::cierreZ(true, precio);
     }
 
 
@@ -225,5 +226,21 @@ bool Hypermarket::vender() {
     } else {
         return false;
     }
+}
 
+float Hypermarket::getVentasTotales(){
+    return _ventasTotales;
+}
+
+void Hypermarket::setVentasTotales(float venta){
+    _ventasTotales = venta;
+}
+
+float Hypermarket::cierreZ(bool muestroOSumo, float venta){ // Si el bool es falso, enseña el total, si es verdadero suma al total el valor de la ultima venta
+
+    if(muestroOSumo == false){
+       cout << Hypermarket::getVentasTotales() << endl;
+    }else{
+        Hypermarket::setVentasTotales(Hypermarket::getVentasTotales() + venta);
+    }
 }
