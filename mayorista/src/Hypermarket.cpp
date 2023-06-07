@@ -4,6 +4,18 @@
 void Hypermarket::menu()
 {
     ArchivoEmpleados empleados;
+    int dia, mes, anio;
+
+    cout << "Introduzca la fecha de hoy: " << endl;
+    cout << "Dia: ";
+    cin >> dia;
+    cout << "Mes: ";
+    cin >> mes;
+    cout << "Anio: ";
+    cin >> anio;
+
+    Fecha fecha(dia, mes, anio);
+
     do
     {
         system("cls");
@@ -42,7 +54,7 @@ void Hypermarket::menu()
             break;
 
         case '4':
-            Hypermarket::menuCierreZ();
+            Hypermarket::menuCierreZ(fecha);
             break;
 
         case '5':
@@ -278,8 +290,9 @@ void Hypermarket::cierreZ(bool muestroOSumo, float venta)  // Si el bool es fals
     }
 }
 
-void Hypermarket::menuCierreZ()
+void Hypermarket::menuCierreZ(Fecha fecha)
 {
+    ArchivoCierreZ cierreZ;
     int opcionMenu;
     do
     {
@@ -309,6 +322,7 @@ void Hypermarket::menuCierreZ()
 
         case 1:
             // Entra al archivo de cierresZ, encuentra el ultimo añadido con el fseek y lo enseña
+            cierreZ.leerUltimoArchivo();
             break;
 
         case 2:
@@ -322,9 +336,11 @@ void Hypermarket::menuCierreZ()
         case 4:
             // Finalizaria el dia actual, y cargaria en el archivo de cierresZ un nuevo registro con la fecha actual y la cantidad de dinero recaudado.
             // Luego de eso aumentaria el dia actual en 1 y haria un setVentasTotales() en 0
+            cierreZ.hacerCierreZ(fecha, getVentasTotales());
             break;
         }
     }
     while(opcionMenu != 0);
 
 }
+

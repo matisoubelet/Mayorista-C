@@ -20,13 +20,14 @@
 
 1683512718 c:\users\matis\desktop\zerafin\facultad\labo ii\codeblocks\clases\mayorista\include\empleado.h
 
-1685058769 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\main.cpp
+1686174587 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\main.cpp
 	<iostream>
 	"Hypermarket.h"
 	"Producto.h"
 	"ArchivoProveedor.h"
 	"ArchivoHypermarket.h"
 	"ArchivoEmpleados.h"
+	"Fecha.h"
 
 1685047294 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\empleado.cpp
 	"Empleado.h"
@@ -65,16 +66,18 @@
 1684794046 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\listadoproveedor.h
 	"Producto.h"
 
-1686089994 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\hypermarket.cpp
+1686177128 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\hypermarket.cpp
 	"Hypermarket.h"
 
-1686088083 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\hypermarket.h
+1686176758 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\hypermarket.h
 	<iostream>
 	"Hypermarket.h"
 	"Menu.h"
 	"ArchivoHypermarket.h"
 	"ArchivoProveedor.h"
 	"ArchivoEmpleados.h"
+	"ArchivoCierreZ.h"
+	"Fecha.h"
 
 1683844209 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\comida.cpp
 	<iostream>
@@ -243,4 +246,19 @@
 
 1685596081 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\archivoproveedor.cpp
 	"ArchivoProveedor.h"
+
+1686173206 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\fecha.cpp
+	<iostream>
+	"Fecha.h"
+	<string>
+
+1686173508 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\fecha.h
+
+1686177337 source:c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\src\archivocierrez.cpp
+	<iostream>
+	"ArchivoCierreZ.h"
+
+1686177128 c:\users\matis\desktop\zerafin\facultad\labo ii\trabajo grupal\repositorio github\mayorista-c-\mayorista\include\archivocierrez.h
+	"Hypermarket.h"
+	"Fecha.h"
 

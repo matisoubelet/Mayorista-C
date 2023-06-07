@@ -6,6 +6,8 @@
 #include "ArchivoHypermarket.h"
 #include "ArchivoProveedor.h"
 #include "ArchivoEmpleados.h"
+#include "ArchivoCierreZ.h"
+#include "Fecha.h"
 
 using namespace std;
 
@@ -19,8 +21,9 @@ class Hypermarket : public Menu
         bool vender();
         void pagos();
         int inventario();
+
         void cierreZ(bool mostrarOSumar, float venta = 0);
-        void menuCierreZ();
+        void menuCierreZ(Fecha fecha);
 
         void setFondos(float fondos);
         float getVentasTotales();

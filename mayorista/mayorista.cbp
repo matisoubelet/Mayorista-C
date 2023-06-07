@@ -36,18 +36,22 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/ArchivoCierreZ.h" />
 		<Unit filename="include/ArchivoEmpleados.h" />
 		<Unit filename="include/ArchivoHypermarket.h" />
 		<Unit filename="include/ArchivoProveedor.h" />
 		<Unit filename="include/Empleado.h" />
+		<Unit filename="include/Fecha.h" />
 		<Unit filename="include/Hypermarket.h" />
 		<Unit filename="include/Menu.h" />
 		<Unit filename="include/Producto.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/ArchivoCierreZ.cpp" />
 		<Unit filename="src/ArchivoEmpleados.cpp" />
 		<Unit filename="src/ArchivoHypermarket.cpp" />
 		<Unit filename="src/ArchivoProveedor.cpp" />
 		<Unit filename="src/Empleado.cpp" />
+		<Unit filename="src/Fecha.cpp" />
 		<Unit filename="src/Hypermarket.cpp" />
 		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/Producto.cpp" />
