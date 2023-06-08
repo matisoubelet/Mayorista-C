@@ -1,42 +1,40 @@
-#include <iostream>
-#include "Hypermarket.h"
-#include "MenuABM.h"
-#include <cstring>
-#include <cstdlib>
-#include "Empleado.h"
-using namespace std;
+#include "ArchivoEmpleados.h"
 
-void MenuABM::CargarMenuAdmin()
+
+void ArchivoEmpleados::MenuAdmin()
 {
+
+    int opcionMenu;
 
     do
     {
-        cout << "+===================+" << endl;
-        cout << "|     -AMB DE EMPLEADOS-" << endl;
-        cout << "| 1 - ALTA" << endl;
-        cout << "| 2 - BAJA" << endl;
-        cout << "| 3 - MODIFICAR" << endl;
-        cout << "| 4 - LISTAR VINCULADOS" << endl;
-        cout << "| 5 - LISTAR DESVINCULADOS" << endl;
-        cout << "| 6 - LISTAR PERMISOS" << endl;
-        cout << "|                  " << endl;
-        cout << "| 0 - SALIR" << endl;
-        cout << "+===================+" << endl;
+        system("cls");
+        cout << "+============================+" << endl;
+        cout << "|     -MENU DE EMPLEADOS-    |" << endl;
+        cout << "| 1 - ALTA                   |" << endl;
+        cout << "| 2 - BAJA                   |" << endl;
+        cout << "| 3 - MODIFICAR              |" << endl;
+        cout << "| 4 - LISTAR VINCULADOS      |" << endl;
+        cout << "| 5 - LISTAR DESVINCULADOS   |" << endl;
+        cout << "| 6 - LISTAR PERMISOS        |" << endl;
+        cout << "|                            |" << endl;
+        cout << "| 0 - SALIR                  |" << endl;
+        cout << "+============================+" << endl;
 
         cout << "QUE OPCION DESEA SELECCIONAR: ";
-        cin >> opcion;
+        cin >> opcionMenu;
         cout << endl;
 
-        while(opcion < '0' || opcion > '6')
+        while(opcionMenu < 0 || opcionMenu > 6)
         {
 
             OpcionNoValida();
-            cin >> opcion;
+            cin >> opcionMenu;
             cout << endl;
 
         }
 
-        switch(opcion)
+        switch(opcionMenu)
         {
 
         case '1':
@@ -71,17 +69,17 @@ void MenuABM::CargarMenuAdmin()
         }
 
     }
-    while(opcion != 0);
-
+    while(opcionMenu != 0);
+    system("cls");
 }
 
-void MenuABM::AltaEmpleado()
+void ArchivoEmpleados::AltaEmpleado()
 {
 
     FILE* pEmpleado;
     Empleado empleado;
 
-    pEmpleado=fopen("Empleados.dat","ab");                                  /// ESTA FUNCION DEBERIA SER DE OTRO ARCHIVO "LISTADOEMPLEADO.H"
+    pEmpleado=fopen("Empleados.dat","ab");    /// ESTA FUNCION DEBERIA SER DE OTRO ARCHIVO "LISTADOEMPLEADO.H"
 
     if(pEmpleado==NULL)
     {
@@ -105,7 +103,7 @@ void MenuABM::AltaEmpleado()
     return;
 }
 
-int MenuABM::BuscarEmpleado(int dni)
+int ArchivoEmpleados::BuscarEmpleado(int dni)
 {
     FILE* pEmpleado;
     Empleado empleado;
@@ -136,7 +134,7 @@ int MenuABM::BuscarEmpleado(int dni)
 }
 
 
-int MenuABM::BajaEmpleado(int legajo)
+int ArchivoEmpleados::BajaEmpleado(int legajo)
 {
     FILE *p;
     Empleado empleado;
@@ -167,13 +165,13 @@ int MenuABM::BajaEmpleado(int legajo)
 
 
 
-void MenuABM::ModificarEmpleado()
+void ArchivoEmpleados::ModificarEmpleado()
 {
 
 
 }
 
-bool MenuABM::ListarEmpleadosActivos()
+bool ArchivoEmpleados::ListarEmpleadosActivos()
 {
     FILE* p;
     Empleado empleado;
@@ -199,7 +197,7 @@ bool MenuABM::ListarEmpleadosActivos()
     return true;
 }
 
-bool MenuABM::ListarEmpleadosInactivos()
+bool ArchivoEmpleados::ListarEmpleadosInactivos()
 {
     FILE* p;
     Empleado empleado;
@@ -225,7 +223,7 @@ bool MenuABM::ListarEmpleadosInactivos()
     return true;
 }
 
-void MenuABM::ListadoPermisos()
+void ArchivoEmpleados::ListadoPermisos()
 {
 
     cout << "El empleado tendra los permisos que le asiga su nivel, asi como todos los anteriores." << endl << endl;

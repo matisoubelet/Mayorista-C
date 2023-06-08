@@ -1,6 +1,8 @@
 #ifndef EMPLEADO_H
 #define EMPLEADO_H
-
+#include<iostream>
+#include <cstring>
+using namespace std;
 
 class Empleado
 {

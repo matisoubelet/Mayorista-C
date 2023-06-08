@@ -36,23 +36,25 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="MenuABM.h" />
+		<Unit filename="include/ArchivoCierreZ.h" />
+		<Unit filename="include/ArchivoEmpleados.h" />
+		<Unit filename="include/ArchivoHypermarket.h" />
+		<Unit filename="include/ArchivoProveedor.h" />
 		<Unit filename="include/Empleado.h" />
+		<Unit filename="include/Fecha.h" />
 		<Unit filename="include/Hypermarket.h" />
-		<Unit filename="include/ListadoHypermarket.h" />
-		<Unit filename="include/ListadoProveedor.h" />
 		<Unit filename="include/Menu.h" />
 		<Unit filename="include/Producto.h" />
-		<Unit filename="include/Proveedor.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/ArchivoCierreZ.cpp" />
+		<Unit filename="src/ArchivoEmpleados.cpp" />
+		<Unit filename="src/ArchivoHypermarket.cpp" />
+		<Unit filename="src/ArchivoProveedor.cpp" />
 		<Unit filename="src/Empleado.cpp" />
+		<Unit filename="src/Fecha.cpp" />
 		<Unit filename="src/Hypermarket.cpp" />
-		<Unit filename="src/ListadoHypermarket.cpp" />
-		<Unit filename="src/ListadoProveedor.cpp" />
 		<Unit filename="src/Menu.cpp" />
-		<Unit filename="src/MenuABM.cpp" />
 		<Unit filename="src/Producto.cpp" />
-		<Unit filename="src/Proveedor.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

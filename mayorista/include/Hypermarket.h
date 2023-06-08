@@ -1,25 +1,37 @@
 #ifndef HYPERMARKET_H
 #define HYPERMARKET_H
+#include<iostream>
+#include "Hypermarket.h"
 #include "Menu.h"
-#include "ListadoHypermarket.h"
+#include "ArchivoHypermarket.h"
+#include "ArchivoProveedor.h"
+#include "ArchivoEmpleados.h"
+#include "ArchivoCierreZ.h"
+#include "Fecha.h"
 
-class Hypermarket : public Menu {
-private:
-    float _fondos, _precioPorBulto = 1.25, _precioPorUnidad = 1.10;
-    int _precioEntrega = 1500;
+using namespace std;
 
-public:
 
-    void menu();
-    void comprar();
-    void vender();
-    void pagos();
-    void inventario();
-    ///void agregarProducto();
-    ///void borrarProducto();
+class Hypermarket : public Menu
+{
+    public:
 
-    void setFondos(float fondos);
-    float getFondos();
+        void menu();
+        bool comprar();
+        bool vender();
+        void pagos();
+        int inventario();
+
+        void cierreZ(bool mostrarOSumar, float venta = 0);
+        void menuCierreZ(Fecha fecha);
+
+        void setFondos(float fondos);
+        float getVentasTotales();
+        void setVentasTotales(float venta);
+
+    private:
+
+        float _ventasTotales = 0;
 
 };
 

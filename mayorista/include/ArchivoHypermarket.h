@@ -1,20 +1,22 @@
-#ifndef LISTADOHYPERMARKET_H
-#define LISTADOHYPERMARKET_H
+#ifndef ARCHIVOHYPERMARKET_H
+#define ARCHIVOHYPERMARKET_H
+#include<iostream>
 #include "Producto.h"
 #include "Hypermarket.h"
+using namespace std;
 
-class ListadoHypermarket
+class ArchivoHypermarket
 {
     public:
 
         void listadoProductos(int);
+        int stock(int idCompra, int tipoProducto);
         void cargarProducto();
         void modificarInventario(bool sumaOresta, int idProducto, int tipoProducto, int cant);
-
-        void cargarFondos();
+        float precioProducto(int idCompra, int tipoProducto);
         void modificarFondos(float monto);
         float mostrarFondos();
 
 };
 
-#endif // LISTADOHYPERMARKET_H
+#endif // ARCHIVOHYPERMARKET_H
