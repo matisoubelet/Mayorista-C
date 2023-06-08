@@ -327,6 +327,7 @@ void Hypermarket::menuCierreZ(Fecha fecha)
 
         case 2:
             // Lo mismo que el anterior, pero al hacer el fseek, retrocede 7 registros y luego los enseña
+            cierreZ.leerUltimaSemana();
             break;
 
         case 3:

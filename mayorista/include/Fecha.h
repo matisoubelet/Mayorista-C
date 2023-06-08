@@ -14,6 +14,7 @@ class Fecha{
       void agregarDias(int cantidadDias);
       std::string toString(std::string formatoFecha = "DD/MM/YYYY");
 
+
     private:
        int _dia, _mes, _anio;
 

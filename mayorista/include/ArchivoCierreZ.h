@@ -5,12 +5,16 @@
 
 class ArchivoCierreZ
 {
+    private:
+
+
     public:
 
         int hacerCierreZ(Fecha fecha, float totalFondos);
         int leerUltimoArchivo();
+        int leerUltimaSemana();
 
-    private:
+        Fecha cambioDeFecha(int dia, int mes, int anio);
 };
 
 #endif // ARCHIVOCIERREZ_H
